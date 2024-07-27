@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "Hash": "NnsWxaD+s6rdLjN1un3VRBSgBuml0kmVbRovS79iRqk=",
+  "Source": "FinalProject-Back",
+  "BasePath": "_content/FinalProject-Back",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "FinalProject-Back\\wwwroot",
+      "Source": "FinalProject-Back",
+      "ContentRoot": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\",
+      "BasePath": "_content/FinalProject-Back",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\2e079045-f948-4ca3-b8fb-f06bc8704e37-news-banner.jpg",
+      "SourceId": "FinalProject-Back",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\",
+      "BasePath": "_content/FinalProject-Back",
+      "RelativePath": "assets/images/2e079045-f948-4ca3-b8fb-f06bc8704e37-news-banner.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\2e079045-f948-4ca3-b8fb-f06bc8704e37-news-banner.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\82d92392-d69f-40fb-a1e7-e3974ca42812-news-content.jpg",
+      "SourceId": "FinalProject-Back",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\",
+      "BasePath": "_content/FinalProject-Back",
+      "RelativePath": "assets/images/82d92392-d69f-40fb-a1e7-e3974ca42812-news-content.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\82d92392-d69f-40fb-a1e7-e3974ca42812-news-content.jpg"
+    }
+  ]
+}
