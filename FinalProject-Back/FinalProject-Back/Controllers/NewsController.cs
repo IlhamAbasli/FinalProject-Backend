@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.SignalR;
 using Repository.Helpers.Exceptions;
 using Service.DTOs.News;
 using Service.Services.Interfaces;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace FinalProject_Back.Controllers
 {

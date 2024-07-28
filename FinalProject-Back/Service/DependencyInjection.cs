@@ -13,7 +13,9 @@ namespace Service
     {
         public static IServiceCollection AddServiceLayer(this IServiceCollection services)
         {
-            services.AddScoped<INewsService, NewsService>();  
+            services.AddScoped<INewsService, NewsService>();
+            services.AddScoped<IGenreService, GenreService>();
+
             return services;
         }
     }

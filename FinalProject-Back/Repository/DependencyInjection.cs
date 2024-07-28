@@ -14,6 +14,8 @@ namespace Repository
         public static IServiceCollection AddRepositoryLayer(this IServiceCollection services)
         {
             services.AddScoped<INewsRepository,NewsRepository>();
+            services.AddScoped<IGenreRepository, GenreRepository>();
+
             return services;
 
         }

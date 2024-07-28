@@ -3,44 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F44D7AF2-169B-4F75-813E-1F6CDB32D18E}|FinalProject-Back\\FinalProject-Back.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\finalproject-back\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F44D7AF2-169B-4F75-813E-1F6CDB32D18E}|FinalProject-Back\\FinalProject-Back.csproj|solutionrelative:finalproject-back\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F44D7AF2-169B-4F75-813E-1F6CDB32D18E}|FinalProject-Back\\FinalProject-Back.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\finalproject-back\\controllers\\genrecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F44D7AF2-169B-4F75-813E-1F6CDB32D18E}|FinalProject-Back\\FinalProject-Back.csproj|solutionrelative:finalproject-back\\controllers\\genrecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9CFDC41-21E2-447D-9DD7-2D44CF329B9E}|Repository\\Repository.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\repository\\repositories\\newsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9CFDC41-21E2-447D-9DD7-2D44CF329B9E}|Repository\\Repository.csproj|solutionrelative:repository\\repositories\\newsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\service\\services\\genreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|solutionrelative:service\\services\\genreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\service\\services\\newsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|solutionrelative:service\\services\\newsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\service\\services\\interfaces\\igenreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|solutionrelative:service\\services\\interfaces\\igenreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\service\\services\\interfaces\\inewsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|solutionrelative:service\\services\\interfaces\\inewsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\service\\helpers\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|solutionrelative:service\\helpers\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9CFDC41-21E2-447D-9DD7-2D44CF329B9E}|Repository\\Repository.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\repository\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9CFDC41-21E2-447D-9DD7-2D44CF329B9E}|Repository\\Repository.csproj|solutionrelative:repository\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D9CFDC41-21E2-447D-9DD7-2D44CF329B9E}|Repository\\Repository.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\repository\\repositories\\interfaces\\igenrerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9CFDC41-21E2-447D-9DD7-2D44CF329B9E}|Repository\\Repository.csproj|solutionrelative:repository\\repositories\\interfaces\\igenrerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9CFDC41-21E2-447D-9DD7-2D44CF329B9E}|Repository\\Repository.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\repository\\repositories\\interfaces\\inewsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9CFDC41-21E2-447D-9DD7-2D44CF329B9E}|Repository\\Repository.csproj|solutionrelative:repository\\repositories\\interfaces\\inewsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D9CFDC41-21E2-447D-9DD7-2D44CF329B9E}|Repository\\Repository.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\repository\\repositories\\genrerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9CFDC41-21E2-447D-9DD7-2D44CF329B9E}|Repository\\Repository.csproj|solutionrelative:repository\\repositories\\genrerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0BD2EC8B-F1CB-4CB1-BCB2-432F295E884B}|Domain\\Domain.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\domain\\entities\\news.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0BD2EC8B-F1CB-4CB1-BCB2-432F295E884B}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\news.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\service\\dtos\\genre\\genredto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|solutionrelative:service\\dtos\\genre\\genredto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\service\\dtos\\news\\newsdetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|solutionrelative:service\\dtos\\news\\newsdetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\service\\dtos\\news\\newseditdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|solutionrelative:service\\dtos\\news\\newseditdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\service\\dtos\\news\\newspagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|solutionrelative:service\\dtos\\news\\newspagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\service\\dtos\\genre\\genrecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|solutionrelative:service\\dtos\\genre\\genrecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,136 +42,110 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "News.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Domain\\Entities\\News.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\News.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Domain\\Entities\\News.cs",
-              "RelativeToolTip": "Domain\\Entities\\News.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAiAAAA",
+              "Title": "GenreDto.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\DTOs\\Genre\\GenreDto.cs",
+              "RelativeDocumentMoniker": "Service\\DTOs\\Genre\\GenreDto.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\DTOs\\Genre\\GenreDto.cs",
+              "RelativeToolTip": "Service\\DTOs\\Genre\\GenreDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T21:46:18.936Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "NewsDetailDto.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\DTOs\\News\\NewsDetailDto.cs",
-              "RelativeDocumentMoniker": "Service\\DTOs\\News\\NewsDetailDto.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\DTOs\\News\\NewsDetailDto.cs",
-              "RelativeToolTip": "Service\\DTOs\\News\\NewsDetailDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T21:39:49.936Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "NewsEditDto.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\DTOs\\News\\NewsEditDto.cs",
-              "RelativeDocumentMoniker": "Service\\DTOs\\News\\NewsEditDto.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\DTOs\\News\\NewsEditDto.cs",
-              "RelativeToolTip": "Service\\DTOs\\News\\NewsEditDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T21:19:32.923Z",
+              "WhenOpened": "2024-07-28T21:08:05.644Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "NewsController.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\Controllers\\NewsController.cs",
-              "RelativeDocumentMoniker": "FinalProject-Back\\Controllers\\NewsController.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\Controllers\\NewsController.cs",
-              "RelativeToolTip": "FinalProject-Back\\Controllers\\NewsController.cs",
-              "ViewState": "AQIAAFMAAAAAAAAAAAAIwIMAAABJAAAA",
+              "Title": "GenreController.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\Controllers\\GenreController.cs",
+              "RelativeDocumentMoniker": "FinalProject-Back\\Controllers\\GenreController.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\Controllers\\GenreController.cs",
+              "RelativeToolTip": "FinalProject-Back\\Controllers\\GenreController.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAwwDUAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T12:31:24.319Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "NewsPageDto.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\DTOs\\News\\NewsPageDto.cs",
-              "RelativeDocumentMoniker": "Service\\DTOs\\News\\NewsPageDto.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\DTOs\\News\\NewsPageDto.cs",
-              "RelativeToolTip": "Service\\DTOs\\News\\NewsPageDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T18:06:16.781Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "NewsService.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Services\\NewsService.cs",
-              "RelativeDocumentMoniker": "Service\\Services\\NewsService.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Services\\NewsService.cs",
-              "RelativeToolTip": "Service\\Services\\NewsService.cs",
-              "ViewState": "AQIAAEoAAAAAAAAAAAAgwGEAAAA9AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T12:38:53.709Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "INewsService.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Services\\Interfaces\\INewsService.cs",
-              "RelativeDocumentMoniker": "Service\\Services\\Interfaces\\INewsService.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Services\\Interfaces\\INewsService.cs",
-              "RelativeToolTip": "Service\\Services\\Interfaces\\INewsService.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T13:22:04.709Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BaseRepository.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Repository\\Repositories\\BaseRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\Repositories\\BaseRepository.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Repository\\Repositories\\BaseRepository.cs",
-              "RelativeToolTip": "Repository\\Repositories\\BaseRepository.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAwwC8AAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T17:43:07.365Z",
+              "WhenOpened": "2024-07-28T21:01:53.495Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "NewsRepository.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Repository\\Repositories\\NewsRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\Repositories\\NewsRepository.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Repository\\Repositories\\NewsRepository.cs",
-              "RelativeToolTip": "Repository\\Repositories\\NewsRepository.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABkAAAAuAAAA",
+              "Title": "GenreService.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Services\\GenreService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\GenreService.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Services\\GenreService.cs",
+              "RelativeToolTip": "Service\\Services\\GenreService.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAA9wCcAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T17:41:33.195Z",
+              "WhenOpened": "2024-07-28T20:59:02.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IGenreService.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Services\\Interfaces\\IGenreService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\Interfaces\\IGenreService.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Services\\Interfaces\\IGenreService.cs",
+              "RelativeToolTip": "Service\\Services\\Interfaces\\IGenreService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T20:58:44.715Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "INewsRepository.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Repository\\Repositories\\Interfaces\\INewsRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\Repositories\\Interfaces\\INewsRepository.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Repository\\Repositories\\Interfaces\\INewsRepository.cs",
-              "RelativeToolTip": "Repository\\Repositories\\Interfaces\\INewsRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA1AAAA",
+              "Title": "GenreRepository.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Repository\\Repositories\\GenreRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Repositories\\GenreRepository.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Repository\\Repositories\\GenreRepository.cs",
+              "RelativeToolTip": "Repository\\Repositories\\GenreRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-27T17:39:43.079Z",
+              "WhenOpened": "2024-07-28T20:57:30.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IGenreRepository.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Repository\\Repositories\\Interfaces\\IGenreRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Repositories\\Interfaces\\IGenreRepository.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Repository\\Repositories\\Interfaces\\IGenreRepository.cs",
+              "RelativeToolTip": "Repository\\Repositories\\Interfaces\\IGenreRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T20:57:15.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Helpers\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "Service\\Helpers\\MappingProfile.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Helpers\\MappingProfile.cs",
+              "RelativeToolTip": "Service\\Helpers\\MappingProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T20:56:27.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GenreCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\DTOs\\Genre\\GenreCreateDto.cs",
+              "RelativeDocumentMoniker": "Service\\DTOs\\Genre\\GenreCreateDto.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\DTOs\\Genre\\GenreCreateDto.cs",
+              "RelativeToolTip": "Service\\DTOs\\Genre\\GenreCreateDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T20:56:09.949Z",
               "EditorCaption": ""
             }
           ]

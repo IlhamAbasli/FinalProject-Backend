@@ -1,4 +1,5 @@
 using Domain.Entities;
+using FinalProject_Back.Middlewares;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.FileProviders;
@@ -55,6 +56,8 @@ if (app.Environment.IsDevelopment())
 app.UseStaticFiles();
 
 app.UseCors("CorsPolicy");
+
+app.UseMiddleware<ExceptionHandlingMiddleware>();
 
 app.UseHttpsRedirection();
 
