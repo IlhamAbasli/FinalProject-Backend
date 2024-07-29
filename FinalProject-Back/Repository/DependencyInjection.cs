@@ -15,6 +15,7 @@ namespace Repository
         {
             services.AddScoped<INewsRepository,NewsRepository>();
             services.AddScoped<IGenreRepository, GenreRepository>();
+            services.AddScoped<ITypeRepository, TypeRepository>();
 
             return services;
 

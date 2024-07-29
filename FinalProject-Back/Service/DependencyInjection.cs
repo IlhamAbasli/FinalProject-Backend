@@ -15,6 +15,7 @@ namespace Service
         {
             services.AddScoped<INewsService, NewsService>();
             services.AddScoped<IGenreService, GenreService>();
+            services.AddScoped<ITypeService, TypeService>();
 
             return services;
         }

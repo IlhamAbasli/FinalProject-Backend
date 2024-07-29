@@ -44,7 +44,7 @@ namespace Repository.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Ads", (string)null);
+                    b.ToTable("Ads");
                 });
 
             modelBuilder.Entity("Domain.Entities.AppUser", b =>
@@ -141,7 +141,7 @@ namespace Repository.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Baskets", (string)null);
+                    b.ToTable("Baskets");
                 });
 
             modelBuilder.Entity("Domain.Entities.Comment", b =>
@@ -173,7 +173,7 @@ namespace Repository.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Comments", (string)null);
+                    b.ToTable("Comments");
                 });
 
             modelBuilder.Entity("Domain.Entities.Genre", b =>
@@ -192,7 +192,7 @@ namespace Repository.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Genres", (string)null);
+                    b.ToTable("Genres");
                 });
 
             modelBuilder.Entity("Domain.Entities.Library", b =>
@@ -218,7 +218,7 @@ namespace Repository.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Libraries", (string)null);
+                    b.ToTable("Libraries");
                 });
 
             modelBuilder.Entity("Domain.Entities.News", b =>
@@ -249,7 +249,7 @@ namespace Repository.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("News", (string)null);
+                    b.ToTable("News");
                 });
 
             modelBuilder.Entity("Domain.Entities.NewsImage", b =>
@@ -276,7 +276,7 @@ namespace Repository.Migrations
 
                     b.HasIndex("NewsId");
 
-                    b.ToTable("NewsImages", (string)null);
+                    b.ToTable("NewsImages");
                 });
 
             modelBuilder.Entity("Domain.Entities.Platform", b =>
@@ -298,7 +298,7 @@ namespace Repository.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Platforms", (string)null);
+                    b.ToTable("Platforms");
                 });
 
             modelBuilder.Entity("Domain.Entities.PlatformProducts", b =>
@@ -324,7 +324,7 @@ namespace Repository.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("PlatformProducts", (string)null);
+                    b.ToTable("PlatformProducts");
                 });
 
             modelBuilder.Entity("Domain.Entities.Product", b =>
@@ -356,6 +356,9 @@ namespace Repository.Migrations
                     b.Property<string>("ProductPrice")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("ProductTypeId")
+                        .HasColumnType("int");
+
                     b.Property<string>("PublisherName")
                         .HasColumnType("nvarchar(max)");
 
@@ -371,11 +374,16 @@ namespace Repository.Migrations
                     b.Property<bool>("SoftDeleted")
                         .HasColumnType("bit");
 
+                    b.Property<int>("TypeId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("GenreId");
 
-                    b.ToTable("Products", (string)null);
+                    b.HasIndex("ProductTypeId");
+
+                    b.ToTable("Products");
                 });
 
             modelBuilder.Entity("Domain.Entities.ProductImage", b =>
@@ -402,7 +410,7 @@ namespace Repository.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("ProductImages", (string)null);
+                    b.ToTable("ProductImages");
                 });
 
             modelBuilder.Entity("Domain.Entities.ProductType", b =>
@@ -413,9 +421,6 @@ namespace Repository.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
-
                     b.Property<bool>("SoftDeleted")
                         .HasColumnType("bit");
 
@@ -424,9 +429,7 @@ namespace Repository.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ProductId");
-
-                    b.ToTable("ProductTypes", (string)null);
+                    b.ToTable("ProductTypes");
                 });
 
             modelBuilder.Entity("Domain.Entities.Subscriber", b =>
@@ -445,7 +448,7 @@ namespace Repository.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Subscribers", (string)null);
+                    b.ToTable("Subscribers");
                 });
 
             modelBuilder.Entity("Domain.Entities.SystemRequirement", b =>
@@ -490,7 +493,7 @@ namespace Repository.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("SystemRequirements", (string)null);
+                    b.ToTable("SystemRequirements");
                 });
 
             modelBuilder.Entity("Domain.Entities.Wallet", b =>
@@ -514,7 +517,7 @@ namespace Repository.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Wallets", (string)null);
+                    b.ToTable("Wallets");
                 });
 
             modelBuilder.Entity("Domain.Entities.Wishlist", b =>
@@ -540,7 +543,7 @@ namespace Repository.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Wishlist", (string)null);
+                    b.ToTable("Wishlist");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -688,7 +691,7 @@ namespace Repository.Migrations
 
                     b.HasIndex("ProductsId");
 
-                    b.ToTable("PlatformProduct", (string)null);
+                    b.ToTable("PlatformProduct");
                 });
 
             modelBuilder.Entity("Domain.Entities.Basket", b =>
@@ -745,7 +748,7 @@ namespace Repository.Migrations
             modelBuilder.Entity("Domain.Entities.NewsImage", b =>
                 {
                     b.HasOne("Domain.Entities.News", "News")
-                        .WithMany()
+                        .WithMany("NewsImages")
                         .HasForeignKey("NewsId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -780,24 +783,19 @@ namespace Repository.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("Domain.Entities.ProductType", "ProductType")
+                        .WithMany("Products")
+                        .HasForeignKey("ProductTypeId");
+
                     b.Navigation("Genre");
+
+                    b.Navigation("ProductType");
                 });
 
             modelBuilder.Entity("Domain.Entities.ProductImage", b =>
                 {
                     b.HasOne("Domain.Entities.Product", "Product")
                         .WithMany("ProductImages")
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Product");
-                });
-
-            modelBuilder.Entity("Domain.Entities.ProductType", b =>
-                {
-                    b.HasOne("Domain.Entities.Product", "Product")
-                        .WithMany("ProductTypes")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -926,6 +924,11 @@ namespace Repository.Migrations
                     b.Navigation("Products");
                 });
 
+            modelBuilder.Entity("Domain.Entities.News", b =>
+                {
+                    b.Navigation("NewsImages");
+                });
+
             modelBuilder.Entity("Domain.Entities.Platform", b =>
                 {
                     b.Navigation("PlatformProducts");
@@ -943,11 +946,14 @@ namespace Repository.Migrations
 
                     b.Navigation("ProductImages");
 
-                    b.Navigation("ProductTypes");
-
                     b.Navigation("SystemRequirements");
 
                     b.Navigation("Wishlists");
+                });
+
+            modelBuilder.Entity("Domain.Entities.ProductType", b =>
+                {
+                    b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
         }

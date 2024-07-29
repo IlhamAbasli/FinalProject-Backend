@@ -3,36 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F44D7AF2-169B-4F75-813E-1F6CDB32D18E}|FinalProject-Back\\FinalProject-Back.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\finalproject-back\\controllers\\genrecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F44D7AF2-169B-4F75-813E-1F6CDB32D18E}|FinalProject-Back\\FinalProject-Back.csproj|solutionrelative:finalproject-back\\controllers\\genrecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F44D7AF2-169B-4F75-813E-1F6CDB32D18E}|FinalProject-Back\\FinalProject-Back.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\finalproject-back\\controllers\\typecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F44D7AF2-169B-4F75-813E-1F6CDB32D18E}|FinalProject-Back\\FinalProject-Back.csproj|solutionrelative:finalproject-back\\controllers\\typecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\service\\services\\genreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|solutionrelative:service\\services\\genreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\service\\services\\typeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|solutionrelative:service\\services\\typeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\service\\services\\interfaces\\igenreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|solutionrelative:service\\services\\interfaces\\igenreservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\service\\dtos\\type\\typedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|solutionrelative:service\\dtos\\type\\typedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\service\\dtos\\type\\typeeditdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|solutionrelative:service\\dtos\\type\\typeeditdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\service\\services\\interfaces\\itypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|solutionrelative:service\\services\\interfaces\\itypeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9CFDC41-21E2-447D-9DD7-2D44CF329B9E}|Repository\\Repository.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\repository\\repositories\\typerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9CFDC41-21E2-447D-9DD7-2D44CF329B9E}|Repository\\Repository.csproj|solutionrelative:repository\\repositories\\typerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\service\\helpers\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|solutionrelative:service\\helpers\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9CFDC41-21E2-447D-9DD7-2D44CF329B9E}|Repository\\Repository.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\repository\\repositories\\interfaces\\igenrerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9CFDC41-21E2-447D-9DD7-2D44CF329B9E}|Repository\\Repository.csproj|solutionrelative:repository\\repositories\\interfaces\\igenrerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D9CFDC41-21E2-447D-9DD7-2D44CF329B9E}|Repository\\Repository.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\repository\\repositories\\interfaces\\ityperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9CFDC41-21E2-447D-9DD7-2D44CF329B9E}|Repository\\Repository.csproj|solutionrelative:repository\\repositories\\interfaces\\ityperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D9CFDC41-21E2-447D-9DD7-2D44CF329B9E}|Repository\\Repository.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\repository\\repositories\\genrerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9CFDC41-21E2-447D-9DD7-2D44CF329B9E}|Repository\\Repository.csproj|solutionrelative:repository\\repositories\\genrerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\service\\dtos\\type\\typecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|solutionrelative:service\\dtos\\type\\typecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\service\\dtos\\genre\\genredto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|solutionrelative:service\\dtos\\genre\\genredto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\service\\dtos\\genre\\genrecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|solutionrelative:service\\dtos\\genre\\genrecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0BD2EC8B-F1CB-4CB1-BCB2-432F295E884B}|Domain\\Domain.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\domain\\entities\\producttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BD2EC8B-F1CB-4CB1-BCB2-432F295E884B}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\producttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,110 +50,136 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "GenreDto.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\DTOs\\Genre\\GenreDto.cs",
-              "RelativeDocumentMoniker": "Service\\DTOs\\Genre\\GenreDto.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\DTOs\\Genre\\GenreDto.cs",
-              "RelativeToolTip": "Service\\DTOs\\Genre\\GenreDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAkAAAA",
+              "DocumentIndex": 3,
+              "Title": "TypeEditDto.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\DTOs\\Type\\TypeEditDto.cs",
+              "RelativeDocumentMoniker": "Service\\DTOs\\Type\\TypeEditDto.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\DTOs\\Type\\TypeEditDto.cs",
+              "RelativeToolTip": "Service\\DTOs\\Type\\TypeEditDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-28T21:08:05.644Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GenreController.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\Controllers\\GenreController.cs",
-              "RelativeDocumentMoniker": "FinalProject-Back\\Controllers\\GenreController.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\Controllers\\GenreController.cs",
-              "RelativeToolTip": "FinalProject-Back\\Controllers\\GenreController.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAwwDUAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-28T21:01:53.495Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GenreService.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Services\\GenreService.cs",
-              "RelativeDocumentMoniker": "Service\\Services\\GenreService.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Services\\GenreService.cs",
-              "RelativeToolTip": "Service\\Services\\GenreService.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAA9wCcAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-28T20:59:02.953Z",
+              "WhenOpened": "2024-07-29T12:27:01.433Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "IGenreService.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Services\\Interfaces\\IGenreService.cs",
-              "RelativeDocumentMoniker": "Service\\Services\\Interfaces\\IGenreService.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Services\\Interfaces\\IGenreService.cs",
-              "RelativeToolTip": "Service\\Services\\Interfaces\\IGenreService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAuAAAA",
+              "Title": "TypeDto.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\DTOs\\Type\\TypeDto.cs",
+              "RelativeDocumentMoniker": "Service\\DTOs\\Type\\TypeDto.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\DTOs\\Type\\TypeDto.cs",
+              "RelativeToolTip": "Service\\DTOs\\Type\\TypeDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-28T20:58:44.715Z",
+              "WhenOpened": "2024-07-29T12:05:24.888Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "GenreRepository.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Repository\\Repositories\\GenreRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\Repositories\\GenreRepository.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Repository\\Repositories\\GenreRepository.cs",
-              "RelativeToolTip": "Repository\\Repositories\\GenreRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABIAAAA",
+              "DocumentIndex": 0,
+              "Title": "TypeController.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\Controllers\\TypeController.cs",
+              "RelativeDocumentMoniker": "FinalProject-Back\\Controllers\\TypeController.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\Controllers\\TypeController.cs",
+              "RelativeToolTip": "FinalProject-Back\\Controllers\\TypeController.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAgwCMAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-28T20:57:30.698Z",
+              "WhenOpened": "2024-07-29T11:57:34.452Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IGenreRepository.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Repository\\Repositories\\Interfaces\\IGenreRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\Repositories\\Interfaces\\IGenreRepository.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Repository\\Repositories\\Interfaces\\IGenreRepository.cs",
-              "RelativeToolTip": "Repository\\Repositories\\Interfaces\\IGenreRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-28T20:57:15.012Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "MappingProfile.cs",
               "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Helpers\\MappingProfile.cs",
               "RelativeDocumentMoniker": "Service\\Helpers\\MappingProfile.cs",
               "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Helpers\\MappingProfile.cs",
               "RelativeToolTip": "Service\\Helpers\\MappingProfile.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAtAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-28T20:56:27.934Z",
+              "WhenOpened": "2024-07-29T11:18:47.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TypeService.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Services\\TypeService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\TypeService.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Services\\TypeService.cs",
+              "RelativeToolTip": "Service\\Services\\TypeService.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAgwCsAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T11:18:14.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ITypeService.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Services\\Interfaces\\ITypeService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\Interfaces\\ITypeService.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Services\\Interfaces\\ITypeService.cs",
+              "RelativeToolTip": "Service\\Services\\Interfaces\\ITypeService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T11:17:54.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TypeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Repository\\Repositories\\TypeRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Repositories\\TypeRepository.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Repository\\Repositories\\TypeRepository.cs",
+              "RelativeToolTip": "Repository\\Repositories\\TypeRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T11:15:22.995Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "GenreCreateDto.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\DTOs\\Genre\\GenreCreateDto.cs",
-              "RelativeDocumentMoniker": "Service\\DTOs\\Genre\\GenreCreateDto.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\DTOs\\Genre\\GenreCreateDto.cs",
-              "RelativeToolTip": "Service\\DTOs\\Genre\\GenreCreateDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAtAAAA",
+              "Title": "ITypeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Repository\\Repositories\\Interfaces\\ITypeRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Repositories\\Interfaces\\ITypeRepository.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Repository\\Repositories\\Interfaces\\ITypeRepository.cs",
+              "RelativeToolTip": "Repository\\Repositories\\Interfaces\\ITypeRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-28T20:56:09.949Z",
+              "WhenOpened": "2024-07-29T11:13:42.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductType.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Domain\\Entities\\ProductType.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\ProductType.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Domain\\Entities\\ProductType.cs",
+              "RelativeToolTip": "Domain\\Entities\\ProductType.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T11:13:22.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TypeCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\DTOs\\Type\\TypeCreateDto.cs",
+              "RelativeDocumentMoniker": "Service\\DTOs\\Type\\TypeCreateDto.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\DTOs\\Type\\TypeCreateDto.cs",
+              "RelativeToolTip": "Service\\DTOs\\Type\\TypeCreateDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T11:13:05.9Z",
               "EditorCaption": ""
             }
           ]

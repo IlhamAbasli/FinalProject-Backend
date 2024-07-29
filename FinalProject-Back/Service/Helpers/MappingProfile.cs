@@ -2,6 +2,7 @@
 using Domain.Entities;
 using Service.DTOs.Genre;
 using Service.DTOs.News;
+using Service.DTOs.Type;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,6 +22,10 @@ namespace Service.Helpers
             CreateMap<GenreCreateDto, Genre>();
             CreateMap<Genre,GenreDto>();
             CreateMap<GenreEditDto, Genre>();
+
+            CreateMap<TypeCreateDto, ProductType>();
+            CreateMap<ProductType,TypeDto>();
+            CreateMap<TypeEditDto, ProductType>();
         }
 
     }
