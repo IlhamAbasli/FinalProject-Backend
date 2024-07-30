@@ -16,6 +16,12 @@ namespace Repository
             services.AddScoped<INewsRepository,NewsRepository>();
             services.AddScoped<IGenreRepository, GenreRepository>();
             services.AddScoped<ITypeRepository, TypeRepository>();
+            services.AddScoped<IAdRepository, AdRepository>();
+            services.AddScoped<IPlatformRepository, PlatformRepository>();
+            services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<ISystemRequirementRepository, SystemRequirementRepository>();
+            services.AddScoped<IPlatformProductsRepository, PlatformProductsRepository>();
+            services.AddScoped<IPlatformSystemRequirementRepository, PlatformSystemRequirementRepository>();
 
             return services;
 

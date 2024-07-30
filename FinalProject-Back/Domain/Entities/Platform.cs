@@ -11,7 +11,7 @@ namespace Domain.Entities
     {
         public string PlatformName { get; set; }
         public string PlatformLogo { get; set; }
-        public ICollection<Product> Products { get; set;}
-        public ICollection<PlatformProducts> PlatformProducts { get; set;}
+        public ICollection<PlatformProducts> PlatformProducts { get; set; }
+        public ICollection<PlatformSystemRequirement> PlatformSystemRequirements { get; set;}
     }
 }

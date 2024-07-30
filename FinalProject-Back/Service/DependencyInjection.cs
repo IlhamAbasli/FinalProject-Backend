@@ -16,6 +16,12 @@ namespace Service
             services.AddScoped<INewsService, NewsService>();
             services.AddScoped<IGenreService, GenreService>();
             services.AddScoped<ITypeService, TypeService>();
+            services.AddScoped<IAdService, AdService>();
+            services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<ISystemRequirementService, SystemRequirementService>();
+            services.AddScoped<IPlatformService, PlatformService>();
+            services.AddScoped<IPlatformSystemRequirementService, PlatformSystemRequirementService>();
+            services.AddScoped<IPlatformProductsService, PlatformProductsService>();
 
             return services;
         }

@@ -1,6 +1,7 @@
 using Domain.Entities;
 using FinalProject_Back.Middlewares;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.FileProviders;
 using Repository;
@@ -52,8 +53,15 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+// Set up custom content types - associating file extension to MIME type
+var provider = new FileExtensionContentTypeProvider();
+// Add new mappings
+provider.Mappings[".avif"] = "image/avif";
 
-app.UseStaticFiles();
+app.UseStaticFiles(new StaticFileOptions
+{   
+    ContentTypeProvider = provider
+});
 
 app.UseCors("CorsPolicy");
 

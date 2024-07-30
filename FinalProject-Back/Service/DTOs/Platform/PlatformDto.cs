@@ -1,0 +1,15 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Service.DTOs.Platform
+{
+    public class PlatformDto
+    {
+        public int Id { get; set; } 
+        public string PlatformName { get; set; }
+        public string PlatformLogo { get; set; }
+    }
+}

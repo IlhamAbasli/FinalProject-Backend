@@ -17,7 +17,6 @@ namespace Domain.Entities
         public string RecomCpuName { get; set; }
         public string RecomMemory { get; set; }
         public string RecomGpu { get; set; }
-        public int ProductId { get; set; }
-        public Product Product { get; set; }
+        public ICollection<PlatformSystemRequirement> PlatformSystemRequirements { get; set; }
     }
 }

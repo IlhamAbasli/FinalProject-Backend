@@ -11,7 +11,7 @@ namespace Domain.Entities
     {
         public string ProductName { get; set; }
         public string ProductDescription { get; set; }
-        public string ProductPrice { get; set; }
+        public decimal ProductPrice { get; set; }
         public string DeveloperName { get; set; }
         public string PublisherName { get; set; }
         public string ProductLogo { get; set; }
@@ -21,12 +21,10 @@ namespace Domain.Entities
         public DateTime ReleaseDate { get; set; } = DateTime.Now;
         public int GenreId { get; set; }
         public Genre Genre { get; set; }
-        public int TypeId { get; set; }
+        public int ProductTypeId { get; set; }
         public ProductType ProductType { get; set; }
-        public ICollection<Platform> Platforms { get; set; }
-        public ICollection<PlatformProducts> PlatformProducts { get; set; }
         public ICollection<ProductImage> ProductImages { get; set; }
-        public ICollection<SystemRequirement> SystemRequirements { get; set; }
+        public ICollection<PlatformProducts> PlatformProducts { get; set; }
         public ICollection<Library> Libraries { get; set; }
         public ICollection<Wishlist> Wishlists { get; set; }
         public ICollection<Basket> Baskets { get; set; }

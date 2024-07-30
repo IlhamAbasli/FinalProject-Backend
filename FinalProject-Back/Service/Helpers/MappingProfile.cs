@@ -1,7 +1,9 @@
 ﻿using AutoMapper;
 using Domain.Entities;
+using Service.DTOs.Ad;
 using Service.DTOs.Genre;
 using Service.DTOs.News;
+using Service.DTOs.Platform;
 using Service.DTOs.Type;
 using System;
 using System.Collections.Generic;
@@ -26,6 +28,12 @@ namespace Service.Helpers
             CreateMap<TypeCreateDto, ProductType>();
             CreateMap<ProductType,TypeDto>();
             CreateMap<TypeEditDto, ProductType>();
+
+            CreateMap<Advertisement,AdDto>();
+            CreateMap<AdEditDto, Advertisement>();
+
+            CreateMap<Platform, PlatformDto>();
+            CreateMap<PlatformEditDto, Platform>();
         }
 
     }

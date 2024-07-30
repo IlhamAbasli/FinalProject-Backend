@@ -327,6 +327,32 @@ namespace Repository.Migrations
                     b.ToTable("PlatformProducts");
                 });
 
+            modelBuilder.Entity("Domain.Entities.PlatformSystemRequirement", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("PlatformId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("SoftDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("SystemRequirementId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PlatformId");
+
+                    b.HasIndex("SystemRequirementId");
+
+                    b.ToTable("PlatformSystemRequirements");
+                });
+
             modelBuilder.Entity("Domain.Entities.Product", b =>
                 {
                     b.Property<int>("Id")
@@ -353,10 +379,10 @@ namespace Repository.Migrations
                     b.Property<string>("ProductName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ProductPrice")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<decimal>("ProductPrice")
+                        .HasColumnType("decimal(18,2)");
 
-                    b.Property<int?>("ProductTypeId")
+                    b.Property<int>("ProductTypeId")
                         .HasColumnType("int");
 
                     b.Property<string>("PublisherName")
@@ -373,9 +399,6 @@ namespace Repository.Migrations
 
                     b.Property<bool>("SoftDeleted")
                         .HasColumnType("bit");
-
-                    b.Property<int>("TypeId")
-                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -471,9 +494,6 @@ namespace Repository.Migrations
                     b.Property<string>("MinOsVersion")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
-
                     b.Property<string>("RecomCpuName")
                         .HasColumnType("nvarchar(max)");
 
@@ -490,8 +510,6 @@ namespace Repository.Migrations
                         .HasColumnType("bit");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("ProductId");
 
                     b.ToTable("SystemRequirements");
                 });
@@ -679,21 +697,6 @@ namespace Repository.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("PlatformProduct", b =>
-                {
-                    b.Property<int>("PlatformsId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ProductsId")
-                        .HasColumnType("int");
-
-                    b.HasKey("PlatformsId", "ProductsId");
-
-                    b.HasIndex("ProductsId");
-
-                    b.ToTable("PlatformProduct");
-                });
-
             modelBuilder.Entity("Domain.Entities.Basket", b =>
                 {
                     b.HasOne("Domain.Entities.Product", "Product")
@@ -775,6 +778,25 @@ namespace Repository.Migrations
                     b.Navigation("Product");
                 });
 
+            modelBuilder.Entity("Domain.Entities.PlatformSystemRequirement", b =>
+                {
+                    b.HasOne("Domain.Entities.Platform", "Platform")
+                        .WithMany("PlatformSystemRequirements")
+                        .HasForeignKey("PlatformId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Domain.Entities.SystemRequirement", "SystemRequirement")
+                        .WithMany("PlatformSystemRequirements")
+                        .HasForeignKey("SystemRequirementId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Platform");
+
+                    b.Navigation("SystemRequirement");
+                });
+
             modelBuilder.Entity("Domain.Entities.Product", b =>
                 {
                     b.HasOne("Domain.Entities.Genre", "Genre")
@@ -785,7 +807,9 @@ namespace Repository.Migrations
 
                     b.HasOne("Domain.Entities.ProductType", "ProductType")
                         .WithMany("Products")
-                        .HasForeignKey("ProductTypeId");
+                        .HasForeignKey("ProductTypeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Genre");
 
@@ -796,17 +820,6 @@ namespace Repository.Migrations
                 {
                     b.HasOne("Domain.Entities.Product", "Product")
                         .WithMany("ProductImages")
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Product");
-                });
-
-            modelBuilder.Entity("Domain.Entities.SystemRequirement", b =>
-                {
-                    b.HasOne("Domain.Entities.Product", "Product")
-                        .WithMany("SystemRequirements")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -891,21 +904,6 @@ namespace Repository.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("PlatformProduct", b =>
-                {
-                    b.HasOne("Domain.Entities.Platform", null)
-                        .WithMany()
-                        .HasForeignKey("PlatformsId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Domain.Entities.Product", null)
-                        .WithMany()
-                        .HasForeignKey("ProductsId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
             modelBuilder.Entity("Domain.Entities.AppUser", b =>
                 {
                     b.Navigation("Baskets");
@@ -932,6 +930,8 @@ namespace Repository.Migrations
             modelBuilder.Entity("Domain.Entities.Platform", b =>
                 {
                     b.Navigation("PlatformProducts");
+
+                    b.Navigation("PlatformSystemRequirements");
                 });
 
             modelBuilder.Entity("Domain.Entities.Product", b =>
@@ -946,14 +946,17 @@ namespace Repository.Migrations
 
                     b.Navigation("ProductImages");
 
-                    b.Navigation("SystemRequirements");
-
                     b.Navigation("Wishlists");
                 });
 
             modelBuilder.Entity("Domain.Entities.ProductType", b =>
                 {
                     b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("Domain.Entities.SystemRequirement", b =>
+                {
+                    b.Navigation("PlatformSystemRequirements");
                 });
 #pragma warning restore 612, 618
         }
