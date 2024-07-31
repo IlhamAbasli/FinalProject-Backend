@@ -494,6 +494,9 @@ namespace Repository.Migrations
                     b.Property<string>("MinOsVersion")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("ProductId")
+                        .HasColumnType("int");
+
                     b.Property<string>("RecomCpuName")
                         .HasColumnType("nvarchar(max)");
 
@@ -510,6 +513,8 @@ namespace Repository.Migrations
                         .HasColumnType("bit");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
 
                     b.ToTable("SystemRequirements");
                 });
@@ -827,6 +832,15 @@ namespace Repository.Migrations
                     b.Navigation("Product");
                 });
 
+            modelBuilder.Entity("Domain.Entities.SystemRequirement", b =>
+                {
+                    b.HasOne("Domain.Entities.Product", "Product")
+                        .WithMany("SystemRequirements")
+                        .HasForeignKey("ProductId");
+
+                    b.Navigation("Product");
+                });
+
             modelBuilder.Entity("Domain.Entities.Wallet", b =>
                 {
                     b.HasOne("Domain.Entities.AppUser", "User")
@@ -945,6 +959,8 @@ namespace Repository.Migrations
                     b.Navigation("PlatformProducts");
 
                     b.Navigation("ProductImages");
+
+                    b.Navigation("SystemRequirements");
 
                     b.Navigation("Wishlists");
                 });

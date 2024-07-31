@@ -1,5 +1,8 @@
-﻿using Domain.Entities;
+﻿using AutoMapper;
+using Domain.Entities;
+using Repository.Helpers.Exceptions;
 using Repository.Repositories.Interfaces;
+using Service.DTOs.Product;
 using Service.Services.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -12,9 +15,11 @@ namespace Service.Services
     public class ProductService : IProductService
     {
         private readonly IProductRepository _productRepo;
-        public ProductService(IProductRepository productRepo)
+        private readonly IMapper _mapper;
+        public ProductService(IProductRepository productRepo,IMapper mapper)
         {
             _productRepo = productRepo;
+            _mapper = mapper;
         }
 
 
@@ -52,9 +57,46 @@ namespace Service.Services
             await _productRepo.Create(product);
         }
 
-        public async Task<List<Product>> GetAll()
+        public async Task<List<ProductDto>> GetAll()
         {
-            return await _productRepo.GetAllWithIncludes();
+            return _mapper.Map<List<ProductDto>>(await _productRepo.GetAllWithIncludes());
+        }
+
+        public async Task<ProductDetailDto> GetById(int id)
+        {
+            var existData = await _productRepo.GetByIdWithIncludes(id);
+            if (existData is null) throw new NotFoundException("Data not found with this ID");
+
+            return _mapper.Map<ProductDetailDto>(existData);   
+        }
+
+        public async Task Edit(int id, ProductEditDto model)
+        {
+            var existData = await _productRepo.GetById(id);
+            if(existData is null) throw new NotFoundException("Data not found with this ID");
+            _mapper.Map(model,existData);
+            await _productRepo.Update(existData);
+        }
+
+        public async Task Delete(int id)
+        {
+            var existData = await _productRepo.GetById(id);
+            if (existData is null) throw new NotFoundException("Data not found with this ID");
+            await _productRepo.Delete(existData);
+        }
+
+        public async Task DeleteImage(int imageId, int productId)
+        {
+            var existData = await GetById(productId);
+            if (existData is null) throw new NotFoundException("Data not found with this ID");
+            var existImage = existData.ProductImages.FirstOrDefault(m => m.Id == imageId);
+            if (existImage is null) throw new NotFoundException("Data not found with this ID");
+            await _productRepo.DeleteImage(existImage);
+        }
+
+        public async Task ChangeMainImage(int productId, int imageId)
+        {
+            await _productRepo.ChangeMainImage(productId, imageId);
         }
     }
 }

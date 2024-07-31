@@ -11,5 +11,8 @@ namespace Repository.Repositories.Interfaces
     public interface IProductRepository : IBaseRepository<Product>
     {
         Task<List<Product>> GetAllWithIncludes();
+        Task<Product> GetByIdWithIncludes(int id);
+        Task DeleteImage(ProductImage image);
+        Task ChangeMainImage(int productId, int imageId);
     }
 }

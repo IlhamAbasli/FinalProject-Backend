@@ -89,7 +89,7 @@ namespace Service.Services
             var existNews = await GetByIdWithImages(newsId);
             if (existNews is null) throw new NotFoundException("News not found with this ID");
             var existImage = existNews.NewsImages.FirstOrDefault(m => m.Id == imageId);
-            if (existNews is null) throw new NotFoundException("News not found with this ID");
+            if (existImage is null) throw new NotFoundException("Data not found with this ID");
             await _newsRepo.DeleteImage(existImage);
         }
 

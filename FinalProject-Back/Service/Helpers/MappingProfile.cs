@@ -4,6 +4,7 @@ using Service.DTOs.Ad;
 using Service.DTOs.Genre;
 using Service.DTOs.News;
 using Service.DTOs.Platform;
+using Service.DTOs.Product;
 using Service.DTOs.Type;
 using System;
 using System.Collections.Generic;
@@ -34,6 +35,10 @@ namespace Service.Helpers
 
             CreateMap<Platform, PlatformDto>();
             CreateMap<PlatformEditDto, Platform>();
+
+            CreateMap<Product,ProductDto>();
+            CreateMap<Product, ProductDetailDto>();
+            CreateMap<ProductEditDto,Product>();
         }
 
     }

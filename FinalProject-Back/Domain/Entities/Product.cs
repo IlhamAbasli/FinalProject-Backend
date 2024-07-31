@@ -25,6 +25,7 @@ namespace Domain.Entities
         public ProductType ProductType { get; set; }
         public ICollection<ProductImage> ProductImages { get; set; }
         public ICollection<PlatformProducts> PlatformProducts { get; set; }
+        public ICollection<SystemRequirement> SystemRequirements { get; set; }
         public ICollection<Library> Libraries { get; set; }
         public ICollection<Wishlist> Wishlists { get; set; }
         public ICollection<Basket> Baskets { get; set; }

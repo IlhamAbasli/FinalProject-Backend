@@ -1,12 +1,24 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\058e10a3-49d3-4f50-942c-0ae4b5245bec-touch-the-color-logo.avif",
-      "PackagePath": "staticwebassets\\assets\\images\\058e10a3-49d3-4f50-942c-0ae4b5245bec-touch-the-color-logo.avif"
+      "Id": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\000dfab5-ec46-401c-aacc-e35987f8586d-horizonMini.avif",
+      "PackagePath": "staticwebassets\\assets\\images\\000dfab5-ec46-401c-aacc-e35987f8586d-horizonMini.avif"
+    },
+    {
+      "Id": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\015db8d1-5333-4483-b329-9269f0acbd12-horizon2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\015db8d1-5333-4483-b329-9269f0acbd12-horizon2.jpg"
     },
     {
       "Id": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\223c1a3d-4758-4471-8ca8-01a03b0d4954-ad2.avif",
       "PackagePath": "staticwebassets\\assets\\images\\223c1a3d-4758-4471-8ca8-01a03b0d4954-ad2.avif"
+    },
+    {
+      "Id": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\29aa0d71-e683-4014-834d-51858e3570f6-GTAV-logo.avif",
+      "PackagePath": "staticwebassets\\assets\\images\\29aa0d71-e683-4014-834d-51858e3570f6-GTAV-logo.avif"
+    },
+    {
+      "Id": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\2a09aaae-d893-4c53-a851-8fd78aed5610-gtav.avif",
+      "PackagePath": "staticwebassets\\assets\\images\\2a09aaae-d893-4c53-a851-8fd78aed5610-gtav.avif"
     },
     {
       "Id": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\2e079045-f948-4ca3-b8fb-f06bc8704e37-news-banner.jpg",
@@ -21,10 +33,6 @@
       "PackagePath": "staticwebassets\\assets\\images\\498178f0-2dbd-4890-8754-26177f4057b9-Mac OS.svg"
     },
     {
-      "Id": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\5f99e6f3-2cf2-4444-8f92-ebef5d4b4973-gtav.avif",
-      "PackagePath": "staticwebassets\\assets\\images\\5f99e6f3-2cf2-4444-8f92-ebef5d4b4973-gtav.avif"
-    },
-    {
       "Id": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\876fd03e-6a97-489e-aa69-734b65dffc4e-ad1.avif",
       "PackagePath": "staticwebassets\\assets\\images\\876fd03e-6a97-489e-aa69-734b65dffc4e-ad1.avif"
     },
@@ -33,12 +41,28 @@
       "PackagePath": "staticwebassets\\assets\\images\\8dd009b8-54e3-4e69-9cff-5e1801f207e5-Windows.svg"
     },
     {
+      "Id": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\9d47c86b-0ad9-4710-9e75-218c8b85a53c-horizonLogo.png",
+      "PackagePath": "staticwebassets\\assets\\images\\9d47c86b-0ad9-4710-9e75-218c8b85a53c-horizonLogo.png"
+    },
+    {
       "Id": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\a1f9d846-074d-4cdd-b580-10bba0b0d84d-touch-the-color-logo.avif",
       "PackagePath": "staticwebassets\\assets\\images\\a1f9d846-074d-4cdd-b580-10bba0b0d84d-touch-the-color-logo.avif"
     },
     {
-      "Id": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\d9a95bd0-1bfb-4184-9de8-d3e601854fda-gtav.avif",
-      "PackagePath": "staticwebassets\\assets\\images\\d9a95bd0-1bfb-4184-9de8-d3e601854fda-gtav.avif"
+      "Id": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\ad7b3cfe-c845-484d-aee1-530a41faaa34-horizon1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\ad7b3cfe-c845-484d-aee1-530a41faaa34-horizon1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\b0570bac-a1c1-441b-b7ac-7460be184420-GTAV-banner.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\b0570bac-a1c1-441b-b7ac-7460be184420-GTAV-banner.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\b60f27f2-1f22-4364-8b15-64494f1edce4-horizon2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\b60f27f2-1f22-4364-8b15-64494f1edce4-horizon2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\e16e0585-ad18-416a-a800-ef3fe9f4cdaf-horizon3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\e16e0585-ad18-416a-a800-ef3fe9f4cdaf-horizon3.jpg"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.FinalProject-Back.Microsoft.AspNetCore.StaticWebAssets.props",
