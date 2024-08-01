@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Domain.Entities;
+using Service.DTOs.Account;
 using Service.DTOs.Ad;
 using Service.DTOs.Genre;
 using Service.DTOs.News;
@@ -39,6 +40,8 @@ namespace Service.Helpers
             CreateMap<Product,ProductDto>();
             CreateMap<Product, ProductDetailDto>();
             CreateMap<ProductEditDto,Product>();
+
+            CreateMap<RegisterDto, AppUser>();
         }
 
     }

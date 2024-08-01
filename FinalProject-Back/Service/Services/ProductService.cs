@@ -27,7 +27,7 @@ namespace Service.Services
 
         private static readonly Random random = new Random();
         private const string characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-        public char GenerateRandomCharacter()
+        private char GenerateRandomCharacter()
         {
             return characters[random.Next(characters.Length)];
         }

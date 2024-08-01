@@ -17,7 +17,6 @@ namespace Service.Services.Interfaces
         Task Delete(int id);
         Task DeleteImage(int imageId, int productId);
         Task ChangeMainImage(int productId, int imageId);
-        char GenerateRandomCharacter();
         string GenerateRedeemCode();
     }
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CKLoQ9ORljmkSB7qsE74FUGFjIveByY+DJ0oTit55Bc=",
+  "Hash": "JPLBKjkdMVF1EK+K72ZfgYHplzdAc7ABrmzLUfhHm0w=",
   "Source": "FinalProject-Back",
   "BasePath": "_content/FinalProject-Back",
   "Mode": "Default",
@@ -34,25 +34,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\000dfab5-ec46-401c-aacc-e35987f8586d-horizonMini.avif"
-    },
-    {
-      "Identity": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\015db8d1-5333-4483-b329-9269f0acbd12-horizon2.jpg",
-      "SourceId": "FinalProject-Back",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\",
-      "BasePath": "_content/FinalProject-Back",
-      "RelativePath": "assets/images/015db8d1-5333-4483-b329-9269f0acbd12-horizon2.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\images\\015db8d1-5333-4483-b329-9269f0acbd12-horizon2.jpg"
     },
     {
       "Identity": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\223c1a3d-4758-4471-8ca8-01a03b0d4954-ad2.avif",
@@ -167,6 +148,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\498178f0-2dbd-4890-8754-26177f4057b9-Mac OS.svg"
+    },
+    {
+      "Identity": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\5b5ce377-6388-4727-a6d2-e66dbe1a0c66-AssasinsMain.avif",
+      "SourceId": "FinalProject-Back",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\",
+      "BasePath": "_content/FinalProject-Back",
+      "RelativePath": "assets/images/5b5ce377-6388-4727-a6d2-e66dbe1a0c66-AssasinsMain.avif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\5b5ce377-6388-4727-a6d2-e66dbe1a0c66-AssasinsMain.avif"
     },
     {
       "Identity": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\876fd03e-6a97-489e-aa69-734b65dffc4e-ad1.avif",
@@ -300,6 +300,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\b60f27f2-1f22-4364-8b15-64494f1edce4-horizon2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\c66b00c3-4df7-4407-9df1-e2a3fdd05d60-assasins1.jpg",
+      "SourceId": "FinalProject-Back",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\",
+      "BasePath": "_content/FinalProject-Back",
+      "RelativePath": "assets/images/c66b00c3-4df7-4407-9df1-e2a3fdd05d60-assasins1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\c66b00c3-4df7-4407-9df1-e2a3fdd05d60-assasins1.jpg"
     },
     {
       "Identity": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\e16e0585-ad18-416a-a800-ef3fe9f4cdaf-horizon3.jpg",

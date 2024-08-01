@@ -22,6 +22,7 @@ namespace Service
             services.AddScoped<IPlatformService, PlatformService>();
             services.AddScoped<IPlatformSystemRequirementService, PlatformSystemRequirementService>();
             services.AddScoped<IPlatformProductsService, PlatformProductsService>();
+            services.AddScoped<IAccountService, AccountService>();
 
             return services;
         }

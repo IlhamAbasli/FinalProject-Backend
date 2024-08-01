@@ -86,3 +86,5 @@ C:\Users\FX706HE\Desktop\FinalProject-BackEnd\FinalProject-Back\FinalProject-Bac
 C:\Users\FX706HE\Desktop\FinalProject-BackEnd\FinalProject-Back\FinalProject-Back\bin\Debug\net6.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\FX706HE\Desktop\FinalProject-BackEnd\FinalProject-Back\FinalProject-Back\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\FX706HE\Desktop\FinalProject-BackEnd\FinalProject-Back\FinalProject-Back\obj\Debug\net6.0\FinalProject-Back.sourcelink.json
+C:\Users\FX706HE\Desktop\FinalProject-BackEnd\FinalProject-Back\FinalProject-Back\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\FX706HE\Desktop\FinalProject-BackEnd\FinalProject-Back\FinalProject-Back\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll

@@ -194,5 +194,24 @@ namespace FinalProject_Back.Controllers
             await _productService.ChangeMainImage((int)productId, (int)imageId);
             return Ok();
         }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete([FromRoute] int? id)
+        {
+            if (id is null) throw new BadRequestException("ID can`t leave empty");
+            var existData = await _productService.GetById((int)id);
+            if (existData is null) throw new NotFoundException("Data not found with this ID");
+            string oldLogoPath = Path.Combine(_env.WebRootPath, "assets/images", existData.ProductLogo);
+            oldLogoPath.DeleteFileFromLocal();
+
+            foreach (var item in existData.ProductImages)
+            {
+                string oldPath = Path.Combine(_env.WebRootPath, "assets/images", item.ImageName);
+                oldLogoPath.DeleteFileFromLocal();
+            }
+
+            await _productService.Delete((int)id);
+            return Ok();
+        }
     }
 }
