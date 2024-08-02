@@ -7,6 +7,7 @@ using Service.DTOs.News;
 using Service.DTOs.Platform;
 using Service.DTOs.Product;
 using Service.DTOs.Type;
+using Service.DTOs.Wallet;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -42,6 +43,8 @@ namespace Service.Helpers
             CreateMap<ProductEditDto,Product>();
 
             CreateMap<RegisterDto, AppUser>();
+
+            CreateMap<WalletCreateDto, Wallet>();
         }
 
     }

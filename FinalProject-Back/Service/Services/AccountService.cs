@@ -96,15 +96,19 @@ namespace Service.Services
 
             var userRoles = await _userManager.GetRolesAsync(user);
 
-            string token = GenerateJwtToken(user.UserName, (List<string>)userRoles);
+            string token = GenerateJwtToken(user.UserName, user.Id, user.Email, user.Firstname, user.Lastname, (List<string>)userRoles);
 
-            return new LoginResponse { Success = true, Message = "Login success",Token=token };
+            return new LoginResponse { Success = true, Message = "Login success", Token = token };
         }
 
-        private string GenerateJwtToken(string username, List<string> roles)
+        private string GenerateJwtToken(string username, string userId, string userEmail, string firstName, string lastName, List<string> roles)
         {
             var claims = new List<Claim>
         {
+            new Claim(JwtRegisteredClaimNames.Sid, userId),
+            new Claim(JwtRegisteredClaimNames.Email, userEmail),
+            new Claim(JwtRegisteredClaimNames.GivenName, firstName),
+            new Claim(JwtRegisteredClaimNames.FamilyName, lastName),
             new Claim(JwtRegisteredClaimNames.Sub, username),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
             new Claim(ClaimTypes.NameIdentifier, username)

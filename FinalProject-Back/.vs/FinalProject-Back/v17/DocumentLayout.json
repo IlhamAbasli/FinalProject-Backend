@@ -3,56 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F44D7AF2-169B-4F75-813E-1F6CDB32D18E}|FinalProject-Back\\FinalProject-Back.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\finalproject-back\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F44D7AF2-169B-4F75-813E-1F6CDB32D18E}|FinalProject-Back\\FinalProject-Back.csproj|solutionrelative:finalproject-back\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F44D7AF2-169B-4F75-813E-1F6CDB32D18E}|FinalProject-Back\\FinalProject-Back.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\finalproject-back\\controllers\\walletcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F44D7AF2-169B-4F75-813E-1F6CDB32D18E}|FinalProject-Back\\FinalProject-Back.csproj|solutionrelative:finalproject-back\\controllers\\walletcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F44D7AF2-169B-4F75-813E-1F6CDB32D18E}|FinalProject-Back\\FinalProject-Back.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\finalproject-back\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F44D7AF2-169B-4F75-813E-1F6CDB32D18E}|FinalProject-Back\\FinalProject-Back.csproj|solutionrelative:finalproject-back\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\service\\services\\walletservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|solutionrelative:service\\services\\walletservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F44D7AF2-169B-4F75-813E-1F6CDB32D18E}|FinalProject-Back\\FinalProject-Back.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\finalproject-back\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F44D7AF2-169B-4F75-813E-1F6CDB32D18E}|FinalProject-Back\\FinalProject-Back.csproj|solutionrelative:finalproject-back\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\service\\dtos\\wallet\\walletcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|solutionrelative:service\\dtos\\wallet\\walletcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\service\\dtos\\account\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|solutionrelative:service\\dtos\\account\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\service\\helpers\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|solutionrelative:service\\helpers\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\service\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|solutionrelative:service\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\service\\services\\interfaces\\iwalletservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|solutionrelative:service\\services\\interfaces\\iwalletservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0BD2EC8B-F1CB-4CB1-BCB2-432F295E884B}|Domain\\Domain.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0BD2EC8B-F1CB-4CB1-BCB2-432F295E884B}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D9CFDC41-21E2-447D-9DD7-2D44CF329B9E}|Repository\\Repository.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\repository\\repositories\\walletrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9CFDC41-21E2-447D-9DD7-2D44CF329B9E}|Repository\\Repository.csproj|solutionrelative:repository\\repositories\\walletrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F44D7AF2-169B-4F75-813E-1F6CDB32D18E}|FinalProject-Back\\FinalProject-Back.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\finalproject-back\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F44D7AF2-169B-4F75-813E-1F6CDB32D18E}|FinalProject-Back\\FinalProject-Back.csproj|solutionrelative:finalproject-back\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D9CFDC41-21E2-447D-9DD7-2D44CF329B9E}|Repository\\Repository.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\repository\\repositories\\interfaces\\iwalletrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9CFDC41-21E2-447D-9DD7-2D44CF329B9E}|Repository\\Repository.csproj|solutionrelative:repository\\repositories\\interfaces\\iwalletrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\service\\helpers\\account\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|solutionrelative:service\\helpers\\account\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\service\\dtos\\wallet\\walletdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|solutionrelative:service\\dtos\\wallet\\walletdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\service\\services\\interfaces\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|solutionrelative:service\\services\\interfaces\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\service\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|solutionrelative:service\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\service\\helpers\\account\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|solutionrelative:service\\helpers\\account\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D9CFDC41-21E2-447D-9DD7-2D44CF329B9E}|Repository\\Repository.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\repository\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9CFDC41-21E2-447D-9DD7-2D44CF329B9E}|Repository\\Repository.csproj|solutionrelative:repository\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\service\\helpers\\account\\userroleresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|solutionrelative:service\\helpers\\account\\userroleresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\service\\dtos\\account\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|solutionrelative:service\\dtos\\account\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\service\\helpers\\enums\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|solutionrelative:service\\helpers\\enums\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0BD2EC8B-F1CB-4CB1-BCB2-432F295E884B}|Domain\\Domain.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\domain\\entities\\wallet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BD2EC8B-F1CB-4CB1-BCB2-432F295E884B}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\wallet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,175 +54,149 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Domain\\Entities\\Product.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\Product.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Domain\\Entities\\Product.cs",
-              "RelativeToolTip": "Domain\\Entities\\Product.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAA5wBkAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T21:23:19.544Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "JWTSettings.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Helpers\\Account\\JWTSettings.cs",
-              "RelativeDocumentMoniker": "Service\\Helpers\\Account\\JWTSettings.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Helpers\\Account\\JWTSettings.cs",
-              "RelativeToolTip": "Service\\Helpers\\Account\\JWTSettings.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAArAAAA",
+              "Title": "WalletDto.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\DTOs\\Wallet\\WalletDto.cs",
+              "RelativeDocumentMoniker": "Service\\DTOs\\Wallet\\WalletDto.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\DTOs\\Wallet\\WalletDto.cs",
+              "RelativeToolTip": "Service\\DTOs\\Wallet\\WalletDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T20:39:14.015Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "FinalProject-Back\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\appsettings.Development.json",
-              "RelativeToolTip": "FinalProject-Back\\appsettings.Development.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-01T20:33:21.502Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "LoginResponse.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Helpers\\Account\\LoginResponse.cs",
-              "RelativeDocumentMoniker": "Service\\Helpers\\Account\\LoginResponse.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Helpers\\Account\\LoginResponse.cs",
-              "RelativeToolTip": "Service\\Helpers\\Account\\LoginResponse.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T20:22:54.117Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LoginDto.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\DTOs\\Account\\LoginDto.cs",
-              "RelativeDocumentMoniker": "Service\\DTOs\\Account\\LoginDto.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\DTOs\\Account\\LoginDto.cs",
-              "RelativeToolTip": "Service\\DTOs\\Account\\LoginDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T20:21:31.251Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UserRoleResponse.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Helpers\\Account\\UserRoleResponse.cs",
-              "RelativeDocumentMoniker": "Service\\Helpers\\Account\\UserRoleResponse.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Helpers\\Account\\UserRoleResponse.cs",
-              "RelativeToolTip": "Service\\Helpers\\Account\\UserRoleResponse.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T20:10:22.271Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "RegisterDto.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\DTOs\\Account\\RegisterDto.cs",
-              "RelativeDocumentMoniker": "Service\\DTOs\\Account\\RegisterDto.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\DTOs\\Account\\RegisterDto.cs",
-              "RelativeToolTip": "Service\\DTOs\\Account\\RegisterDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T18:42:52.723Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "FinalProject-Back\\Controllers\\ProductController.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "FinalProject-Back\\Controllers\\ProductController.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAgwGwAAABhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T18:40:14.305Z",
+              "WhenOpened": "2024-08-02T16:58:36.131Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\Program.cs",
-              "RelativeDocumentMoniker": "FinalProject-Back\\Program.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\Program.cs",
-              "RelativeToolTip": "FinalProject-Back\\Program.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAYwEIAAAAdAAAA",
+              "Title": "WalletController.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\Controllers\\WalletController.cs",
+              "RelativeDocumentMoniker": "FinalProject-Back\\Controllers\\WalletController.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\Controllers\\WalletController.cs",
+              "RelativeToolTip": "FinalProject-Back\\Controllers\\WalletController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABMAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T18:31:46.383Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "FinalProject-Back\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "FinalProject-Back\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwCQAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T18:03:34.284Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Roles.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Helpers\\Enums\\Roles.cs",
-              "RelativeDocumentMoniker": "Service\\Helpers\\Enums\\Roles.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Helpers\\Enums\\Roles.cs",
-              "RelativeToolTip": "Service\\Helpers\\Enums\\Roles.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T17:55:20.526Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AccountService.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Services\\AccountService.cs",
-              "RelativeDocumentMoniker": "Service\\Services\\AccountService.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Services\\AccountService.cs",
-              "RelativeToolTip": "Service\\Services\\AccountService.cs",
-              "ViewState": "AQIAAFAAAAAAAAAAAAAcwGQAAABcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T17:46:26.635Z",
+              "WhenOpened": "2024-08-02T16:22:38.878Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "IAccountService.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Services\\Interfaces\\IAccountService.cs",
-              "RelativeDocumentMoniker": "Service\\Services\\Interfaces\\IAccountService.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Services\\Interfaces\\IAccountService.cs",
-              "RelativeToolTip": "Service\\Services\\Interfaces\\IAccountService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAzAAAA",
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "Service\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\DependencyInjection.cs",
+              "RelativeToolTip": "Service\\DependencyInjection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T17:43:10.329Z",
+              "WhenOpened": "2024-08-02T16:22:02.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WalletService.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Services\\WalletService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\WalletService.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Services\\WalletService.cs",
+              "RelativeToolTip": "Service\\Services\\WalletService.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACAAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T16:19:56.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Helpers\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "Service\\Helpers\\MappingProfile.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Helpers\\MappingProfile.cs",
+              "RelativeToolTip": "Service\\Helpers\\MappingProfile.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAgwC4AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T16:18:25.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WalletCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\DTOs\\Wallet\\WalletCreateDto.cs",
+              "RelativeDocumentMoniker": "Service\\DTOs\\Wallet\\WalletCreateDto.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\DTOs\\Wallet\\WalletCreateDto.cs",
+              "RelativeToolTip": "Service\\DTOs\\Wallet\\WalletCreateDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T16:17:57.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IWalletService.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Services\\Interfaces\\IWalletService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\Interfaces\\IWalletService.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Services\\Interfaces\\IWalletService.cs",
+              "RelativeToolTip": "Service\\Services\\Interfaces\\IWalletService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T16:17:03.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Repository\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "Repository\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Repository\\DependencyInjection.cs",
+              "RelativeToolTip": "Repository\\DependencyInjection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T16:16:03.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WalletRepository.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Repository\\Repositories\\WalletRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Repositories\\WalletRepository.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Repository\\Repositories\\WalletRepository.cs",
+              "RelativeToolTip": "Repository\\Repositories\\WalletRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T16:15:27.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IWalletRepository.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Repository\\Repositories\\Interfaces\\IWalletRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Repositories\\Interfaces\\IWalletRepository.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Repository\\Repositories\\Interfaces\\IWalletRepository.cs",
+              "RelativeToolTip": "Repository\\Repositories\\Interfaces\\IWalletRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T16:15:04.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Wallet.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Domain\\Entities\\Wallet.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Wallet.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Domain\\Entities\\Wallet.cs",
+              "RelativeToolTip": "Domain\\Entities\\Wallet.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T16:19:04.78Z",
               "EditorCaption": ""
             }
           ]
