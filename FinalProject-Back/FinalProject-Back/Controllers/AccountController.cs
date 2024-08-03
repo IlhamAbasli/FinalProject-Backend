@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Org.BouncyCastle.Bcpg;
 using Service.DTOs.Account;
 using Service.Services.Interfaces;
 
@@ -35,6 +36,14 @@ namespace FinalProject_Back.Controllers
         {
             var response = await _accountService.SignIn(request);
             return Ok(response);
+        }
+
+
+        [HttpPut]
+        public async Task<IActionResult> UpdateUser([FromQuery] string userId, [FromForm] UserUpdateDto request)
+        {
+            await _accountService.UpdateUser(userId,request);
+            return Ok();
         }
     }
 }

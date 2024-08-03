@@ -18,7 +18,7 @@ namespace FinalProject_Back.Controllers
         [HttpPost]
         public async Task<IActionResult> AddFunds([FromQuery] WalletCreateDto request)
         {
-            await _walletService.Create(request);
+            await _walletService.AddFunds(request);
             return Ok();
         }
 

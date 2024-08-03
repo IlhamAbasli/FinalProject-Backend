@@ -14,9 +14,16 @@ namespace Repository.Repositories
     {
         public WalletRepository(AppDbContext context) : base(context) { }
 
-        public async Task<List<Wallet>> GetUserBalance(string userId)
+        public async Task AddFundsToWallet(Wallet wallet)
         {
-            return await _entities.Where(m => m.UserId == userId).ToListAsync();
+            var userWallet = await GetUserBalance(wallet.UserId);
+            userWallet.Balance += wallet.Balance;
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task<Wallet> GetUserBalance(string userId)
+        {
+            return await _entities.FirstOrDefaultAsync(m => m.UserId == userId);
         }
     }
 }

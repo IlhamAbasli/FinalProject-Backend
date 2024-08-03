@@ -13,6 +13,7 @@ namespace Service.Services.Interfaces
         Task<RegisterResponse> SignUp(RegisterDto model);
         Task<UserRoleResponse> AddRoleToUser(UserRoleDto model);
         Task<LoginResponse> SignIn(LoginDto model);
+        Task UpdateUser(string userId, UserUpdateDto model);
         Task CreateRoles();
     }
 }

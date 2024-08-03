@@ -3,6 +3,8 @@ using Domain.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using Repository.Helpers.Exceptions;
+using Repository.Repositories.Interfaces;
 using Service.DTOs.Account;
 using Service.Helpers.Account;
 using Service.Helpers.Enums;
@@ -132,6 +134,20 @@ namespace Service.Services
             );
 
             return new JwtSecurityTokenHandler().WriteToken(token);
+        }
+
+        public async Task UpdateUser(string userId,UserUpdateDto model)
+        {
+            var existUsername = await _userManager.FindByNameAsync(model.Username);
+            if(existUsername is not null)
+            {
+                throw new BadRequestException("This username has already exist");
+            }
+            var user = await _userManager.FindByIdAsync(userId);
+            user.UserName = model.Username;
+            user.Firstname = model.Firstname;
+            user.Lastname = model.Lastname;
+            await _userManager.UpdateAsync(user);
         }
     }
 }

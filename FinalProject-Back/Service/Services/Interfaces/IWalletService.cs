@@ -9,7 +9,7 @@ namespace Service.Services.Interfaces
 {
     public interface IWalletService
     {
-        Task Create(WalletCreateDto model);
+        Task AddFunds(WalletCreateDto model);
         Task<WalletDto> GetUserBalance(string userId);
     }
 }

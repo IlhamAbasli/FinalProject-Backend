@@ -45,6 +45,8 @@ namespace Service.Helpers
             CreateMap<RegisterDto, AppUser>();
 
             CreateMap<WalletCreateDto, Wallet>();
+
+            CreateMap<UserUpdateDto,AppUser>();
         }
 
     }

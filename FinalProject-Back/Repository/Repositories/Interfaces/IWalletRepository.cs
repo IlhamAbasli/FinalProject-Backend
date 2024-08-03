@@ -10,6 +10,7 @@ namespace Repository.Repositories.Interfaces
 {
     public interface IWalletRepository : IBaseRepository<Wallet>
     {
-        Task<List<Wallet>> GetUserBalance(string userId);
+        Task<Wallet> GetUserBalance(string userId);
+        Task AddFundsToWallet(Wallet wallet);
     }
 }

@@ -24,6 +24,7 @@ namespace Repository
             services.AddScoped<IPlatformSystemRequirementRepository, PlatformSystemRequirementRepository>();
             services.AddScoped<IWalletRepository, WalletRepository>();
 
+
             return services;
 
         }

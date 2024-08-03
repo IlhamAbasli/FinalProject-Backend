@@ -21,15 +21,26 @@ namespace Service.Services
             _mapper = mapper;
             _walletRepo = walletRepo;
         }
-        public async Task Create(WalletCreateDto model)
+        public async Task AddFunds(WalletCreateDto model)
         {
-            await _walletRepo.Create(_mapper.Map<Wallet>(model));
+            var userBalance = await _walletRepo.GetUserBalance(model.UserId);
+            if (userBalance is null)
+            {
+                await _walletRepo.Create(_mapper.Map<Wallet>(model));
+            }
+            else
+            {
+                await _walletRepo.AddFundsToWallet(_mapper.Map<Wallet>(model));
+            }
+
+
+
         }
 
         public async Task<WalletDto> GetUserBalance(string userId)
         {
             var userBalance = await _walletRepo.GetUserBalance(userId);
-            decimal balance = userBalance.Sum(m => m.Balance);
+            decimal balance = userBalance.Balance;
             return new WalletDto { Balance = balance };
         }
     }
