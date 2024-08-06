@@ -36,13 +36,14 @@ namespace Service.Services
         public async Task Edit(int id, GenreEditDto model)
         {
             var existGenre = await _genreRepo.GetById(id);
+            if (existGenre is null) throw new NotFoundException("Data not found with this ID");
             _mapper.Map(model, existGenre);
             await _genreRepo.Update(existGenre);
         }
 
         public async Task<IEnumerable<GenreDto>> GetAll()
         {
-            var genres = await _genreRepo.GetAll();
+            var genres = await _genreRepo.GetAllWithIncludes();
             return _mapper.Map<IEnumerable<GenreDto>>(genres);
         }
 

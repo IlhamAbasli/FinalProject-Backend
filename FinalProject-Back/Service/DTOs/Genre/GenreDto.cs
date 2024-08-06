@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+using Domain.Entities;
 
 namespace Service.DTOs.Genre
 {
@@ -10,5 +7,6 @@ namespace Service.DTOs.Genre
     {
         public int Id { get; set; } 
         public string GenreName { get; set; }
+        public ICollection<Domain.Entities.Product> Products { get; set; }
     }
 }

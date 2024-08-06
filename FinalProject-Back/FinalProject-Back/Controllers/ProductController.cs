@@ -213,5 +213,12 @@ namespace FinalProject_Back.Controllers
             await _productService.Delete((int)id);
             return Ok();
         }
+
+        [HttpGet]
+        public async Task<IActionResult> GetByRedeem([FromQuery] string redeemCode)
+        {
+            var product = await _productService.GetByRedeemCode(redeemCode);
+            return Ok(product);
+        }
     }
 }

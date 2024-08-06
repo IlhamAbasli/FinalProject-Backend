@@ -98,5 +98,12 @@ namespace Service.Services
         {
             await _productRepo.ChangeMainImage(productId, imageId);
         }
+
+        public async Task<ProductRedeemDto> GetByRedeemCode(string redeemCode)
+        {
+            var existProduct = await _productRepo.GetByRedeemCode(redeemCode);
+            if (existProduct is null) throw new NotFoundException("Data not found");
+            return new ProductRedeemDto { ProductId = existProduct.Id, ProductImages = existProduct.ProductImages };
+        }
     }
 }

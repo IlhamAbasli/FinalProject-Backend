@@ -48,7 +48,9 @@ namespace Service.Services
 
         public async Task<TypeDto> GetById(int id)
         {
-            return _mapper.Map<TypeDto>(await _typeRepo.GetById(id));
+            var existData = await _typeRepo.GetById(id);
+            if (existData is null) throw new NotFoundException("Data not found with this ID");
+            return _mapper.Map<TypeDto>(existData);
         }
     }
 }

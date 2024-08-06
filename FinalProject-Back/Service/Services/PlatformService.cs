@@ -55,7 +55,9 @@ namespace Service.Services
 
         public async Task<Platform> GetByIdRaw(int id)
         {
-            return await _platformRepo.GetById(id);
+            var existData = await _platformRepo.GetById(id);
+            if (existData is null) throw new NotFoundException("Data not found with this ID");
+            return existData;
         }
     }
 }

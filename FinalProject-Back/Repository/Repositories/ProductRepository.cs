@@ -52,5 +52,11 @@ namespace Repository.Repositories
                                   .ThenInclude(m => m.Platform)
                                   .FirstOrDefaultAsync();
         }
+        public async Task<Product> GetByRedeemCode(string redeemCode)
+        {
+            var existData = await _entities.Include(m => m.ProductImages).FirstOrDefaultAsync(m => m.RedeemCode == redeemCode);
+            //MNV9Y-AFOVH-4SJPL-OCQ6K
+            return existData;
+        }
     }
 }

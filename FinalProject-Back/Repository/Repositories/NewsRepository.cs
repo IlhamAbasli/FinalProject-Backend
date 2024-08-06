@@ -1,6 +1,7 @@
 ﻿using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Repository.Data;
+using Repository.Helpers.Exceptions;
 using Repository.Repositories.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -17,6 +18,7 @@ namespace Repository.Repositories
         public async Task ChangeMainImage(int newsId,int imageId)
         {
             var existNews = await _entities.Include(m=>m.NewsImages).FirstOrDefaultAsync(m=>m.Id == newsId);
+            if (existNews is null) throw new NotFoundException("Data not found with this ID");
             foreach (var image in existNews.NewsImages)
             {
                 image.IsMain = false;

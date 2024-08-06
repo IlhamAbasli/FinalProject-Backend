@@ -86,21 +86,21 @@ namespace Service.Services
 
             if (user is null)
             {
-                return new LoginResponse { Success = false, Message = "Login failed" };
+                return new LoginResponse { Success = false, Message = "Login failed,check your login credential" };
             }
 
             var response = await _userManager.CheckPasswordAsync(user, model.Password);
 
             if (!response)
             {
-                return new LoginResponse { Success = false, Message = "Login failed" };
+                return new LoginResponse { Success = false, Message = "Login failed,check your login credential" };
             }
 
             var userRoles = await _userManager.GetRolesAsync(user);
 
             string token = GenerateJwtToken(user.UserName, user.Id, user.Email, user.Firstname, user.Lastname, (List<string>)userRoles);
 
-            return new LoginResponse { Success = true, Message = "Login success", Token = token };
+            return new LoginResponse { Success = true, Message = "Login success, redirecting to home page", Token = token };
         }
 
         private string GenerateJwtToken(string username, string userId, string userEmail, string firstName, string lastName, List<string> roles)

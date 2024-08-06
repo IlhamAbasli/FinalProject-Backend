@@ -49,7 +49,9 @@ namespace Service.Services
 
         public async Task<AdDto> GetById(int id)
         {
-            return _mapper.Map<AdDto>(await _adRepo.GetById(id));
+            var existAd = await _adRepo.GetById(id);
+            if (existAd is null) throw new NotFoundException("Data not found with this ID");
+            return _mapper.Map<AdDto>(existAd);
         }
     }
 }

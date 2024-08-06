@@ -14,5 +14,6 @@ namespace Repository.Repositories.Interfaces
         Task<Product> GetByIdWithIncludes(int id);
         Task DeleteImage(ProductImage image);
         Task ChangeMainImage(int productId, int imageId);
+        Task<Product> GetByRedeemCode(string redeemCode);
     }
 }

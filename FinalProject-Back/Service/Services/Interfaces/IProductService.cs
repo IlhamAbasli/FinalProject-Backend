@@ -18,5 +18,6 @@ namespace Service.Services.Interfaces
         Task DeleteImage(int imageId, int productId);
         Task ChangeMainImage(int productId, int imageId);
         string GenerateRedeemCode();
+        Task<ProductRedeemDto> GetByRedeemCode(string redeemCode);
     }
 }
