@@ -23,6 +23,7 @@ namespace Repository
             services.AddScoped<IPlatformProductsRepository, PlatformProductsRepository>();
             services.AddScoped<IPlatformSystemRequirementRepository, PlatformSystemRequirementRepository>();
             services.AddScoped<IWalletRepository, WalletRepository>();
+            services.AddScoped<ILibraryRepository, LibraryRepository>();
 
 
             return services;

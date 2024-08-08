@@ -3,6 +3,7 @@ using Domain.Entities;
 using Service.DTOs.Account;
 using Service.DTOs.Ad;
 using Service.DTOs.Genre;
+using Service.DTOs.Library;
 using Service.DTOs.News;
 using Service.DTOs.Platform;
 using Service.DTOs.Product;
@@ -47,6 +48,8 @@ namespace Service.Helpers
             CreateMap<WalletCreateDto, Wallet>();
 
             CreateMap<UserUpdateDto,AppUser>();
+
+            CreateMap<AddLibraryDto,Library>();
         }
 
     }

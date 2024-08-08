@@ -32,6 +32,38 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\1481a440-4613-4290-985f-cfffdf42da19-SniperEliteMain.avif))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\196b1da5-0566-45e9-a1e2-dc700bd6d442-AlanWakeLogo.avif))">
+      <SourceType>Package</SourceType>
+      <SourceId>FinalProject-Back</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FinalProject-Back</BasePath>
+      <RelativePath>assets/images/196b1da5-0566-45e9-a1e2-dc700bd6d442-AlanWakeLogo.avif</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\196b1da5-0566-45e9-a1e2-dc700bd6d442-AlanWakeLogo.avif))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\1b5cd9ab-a7d1-4b82-b1d5-33c54de4ac5e-AlanWakeBanner2.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>FinalProject-Back</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FinalProject-Back</BasePath>
+      <RelativePath>assets/images/1b5cd9ab-a7d1-4b82-b1d5-33c54de4ac5e-AlanWakeBanner2.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\1b5cd9ab-a7d1-4b82-b1d5-33c54de4ac5e-AlanWakeBanner2.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\1ea64121-a6e0-4558-b062-f3e3db44e862-BFVlogo.avif))">
       <SourceType>Package</SourceType>
       <SourceId>FinalProject-Back</SourceId>
@@ -48,6 +80,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\1ea64121-a6e0-4558-b062-f3e3db44e862-BFVlogo.avif))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\21966d31-09a6-4361-9d39-a5ec37f8c212-OutlastLogo.avif))">
+      <SourceType>Package</SourceType>
+      <SourceId>FinalProject-Back</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FinalProject-Back</BasePath>
+      <RelativePath>assets/images/21966d31-09a6-4361-9d39-a5ec37f8c212-OutlastLogo.avif</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\21966d31-09a6-4361-9d39-a5ec37f8c212-OutlastLogo.avif))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\223c1a3d-4758-4471-8ca8-01a03b0d4954-ad2.avif))">
       <SourceType>Package</SourceType>
       <SourceId>FinalProject-Back</SourceId>
@@ -63,6 +111,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\223c1a3d-4758-4471-8ca8-01a03b0d4954-ad2.avif))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\25605f07-df9c-4ede-89bd-d75d0f9d4565-HouseFlipperLogo.avif))">
+      <SourceType>Package</SourceType>
+      <SourceId>FinalProject-Back</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FinalProject-Back</BasePath>
+      <RelativePath>assets/images/25605f07-df9c-4ede-89bd-d75d0f9d4565-HouseFlipperLogo.avif</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\25605f07-df9c-4ede-89bd-d75d0f9d4565-HouseFlipperLogo.avif))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\29aa0d71-e683-4014-834d-51858e3570f6-GTAV-logo.avif))">
       <SourceType>Package</SourceType>
@@ -112,6 +176,38 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\2ae39297-f33f-456d-b8c1-5242d4228585-RDR2main.avif))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\2b104b93-c97e-4c81-a597-cee9dd13b3f5-EvilWithinLogo.avif))">
+      <SourceType>Package</SourceType>
+      <SourceId>FinalProject-Back</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FinalProject-Back</BasePath>
+      <RelativePath>assets/images/2b104b93-c97e-4c81-a597-cee9dd13b3f5-EvilWithinLogo.avif</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\2b104b93-c97e-4c81-a597-cee9dd13b3f5-EvilWithinLogo.avif))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\2cd58465-b8ac-4477-8174-83b0d7b2113b-OutlastBanner2.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>FinalProject-Back</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FinalProject-Back</BasePath>
+      <RelativePath>assets/images/2cd58465-b8ac-4477-8174-83b0d7b2113b-OutlastBanner2.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\2cd58465-b8ac-4477-8174-83b0d7b2113b-OutlastBanner2.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\2e079045-f948-4ca3-b8fb-f06bc8704e37-news-banner.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>FinalProject-Back</SourceId>
@@ -128,6 +224,54 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\2e079045-f948-4ca3-b8fb-f06bc8704e37-news-banner.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\311671fb-6358-4606-8c3a-827bbd332a94-SonicMain.avif))">
+      <SourceType>Package</SourceType>
+      <SourceId>FinalProject-Back</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FinalProject-Back</BasePath>
+      <RelativePath>assets/images/311671fb-6358-4606-8c3a-827bbd332a94-SonicMain.avif</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\311671fb-6358-4606-8c3a-827bbd332a94-SonicMain.avif))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\35de271f-208f-42f3-a57e-863e4a444d73-SpongeBobBanner3.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>FinalProject-Back</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FinalProject-Back</BasePath>
+      <RelativePath>assets/images/35de271f-208f-42f3-a57e-863e4a444d73-SpongeBobBanner3.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\35de271f-208f-42f3-a57e-863e4a444d73-SpongeBobBanner3.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\40d7e357-ef67-4d38-8ab1-626dd15733f6-EvilWithinBanner1.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>FinalProject-Back</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FinalProject-Back</BasePath>
+      <RelativePath>assets/images/40d7e357-ef67-4d38-8ab1-626dd15733f6-EvilWithinBanner1.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\40d7e357-ef67-4d38-8ab1-626dd15733f6-EvilWithinBanner1.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\410f4f63-1fde-47a5-b4f9-310d77638e5a-ad3.avif))">
       <SourceType>Package</SourceType>
       <SourceId>FinalProject-Back</SourceId>
@@ -143,6 +287,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\410f4f63-1fde-47a5-b4f9-310d77638e5a-ad3.avif))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\4801f6bd-1772-40dc-9bf3-e20410801e80-EvilWithinBanner3.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>FinalProject-Back</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FinalProject-Back</BasePath>
+      <RelativePath>assets/images/4801f6bd-1772-40dc-9bf3-e20410801e80-EvilWithinBanner3.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\4801f6bd-1772-40dc-9bf3-e20410801e80-EvilWithinBanner3.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\498178f0-2dbd-4890-8754-26177f4057b9-Mac OS.svg))">
       <SourceType>Package</SourceType>
@@ -192,6 +352,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\5b5ce377-6388-4727-a6d2-e66dbe1a0c66-AssasinsMain.avif))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\5f0291e0-457f-4eaf-b4be-5a7d6960757f-HouseFlipperBanner4.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>FinalProject-Back</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FinalProject-Back</BasePath>
+      <RelativePath>assets/images/5f0291e0-457f-4eaf-b4be-5a7d6960757f-HouseFlipperBanner4.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\5f0291e0-457f-4eaf-b4be-5a7d6960757f-HouseFlipperBanner4.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\62e31b15-1aea-488c-a7e4-b3be40887107-B4Bbanner1.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>FinalProject-Back</SourceId>
@@ -224,6 +400,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\66cbc65c-04cd-4b0e-8ccf-45a5b94c4161-FarCry6Banner2.png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\6d359f33-5d8b-455c-9bd7-c2f705f09ddb-SpongeBobLogo.avif))">
+      <SourceType>Package</SourceType>
+      <SourceId>FinalProject-Back</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FinalProject-Back</BasePath>
+      <RelativePath>assets/images/6d359f33-5d8b-455c-9bd7-c2f705f09ddb-SpongeBobLogo.avif</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\6d359f33-5d8b-455c-9bd7-c2f705f09ddb-SpongeBobLogo.avif))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\779006b2-809b-4bad-a329-c90b21638809-SinperElitebanner2.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>FinalProject-Back</SourceId>
@@ -239,6 +431,38 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\779006b2-809b-4bad-a329-c90b21638809-SinperElitebanner2.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\7c7ac346-9ffa-4f95-911d-191f0fafdbbc-SpongeBobMain.avif))">
+      <SourceType>Package</SourceType>
+      <SourceId>FinalProject-Back</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FinalProject-Back</BasePath>
+      <RelativePath>assets/images/7c7ac346-9ffa-4f95-911d-191f0fafdbbc-SpongeBobMain.avif</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\7c7ac346-9ffa-4f95-911d-191f0fafdbbc-SpongeBobMain.avif))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\7cb4f8dd-cb20-401b-a9b6-08ae961e1ff5-AlanWakeBanner1.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>FinalProject-Back</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FinalProject-Back</BasePath>
+      <RelativePath>assets/images/7cb4f8dd-cb20-401b-a9b6-08ae961e1ff5-AlanWakeBanner1.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\7cb4f8dd-cb20-401b-a9b6-08ae961e1ff5-AlanWakeBanner1.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\845b9ebb-8aae-4fe6-9a3a-bc651714b2a1-FarCry6Banner1.png))">
       <SourceType>Package</SourceType>
@@ -304,6 +528,38 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\884f5774-caf3-4e30-8ab9-b83d0636d50f-RDR2Banner.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\88878ebd-9c9d-4cd4-bdbd-7b3b375feece-SpongeBobBanner2.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>FinalProject-Back</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FinalProject-Back</BasePath>
+      <RelativePath>assets/images/88878ebd-9c9d-4cd4-bdbd-7b3b375feece-SpongeBobBanner2.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\88878ebd-9c9d-4cd4-bdbd-7b3b375feece-SpongeBobBanner2.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\89e99fa3-bd39-4dfa-97b3-1b22687978f5-OutlastBanner1.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>FinalProject-Back</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FinalProject-Back</BasePath>
+      <RelativePath>assets/images/89e99fa3-bd39-4dfa-97b3-1b22687978f5-OutlastBanner1.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\89e99fa3-bd39-4dfa-97b3-1b22687978f5-OutlastBanner1.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\8c34282e-3a34-447c-8ce1-a52d64d0b1cb-BFVbanner1.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>FinalProject-Back</SourceId>
@@ -335,6 +591,54 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\8dd009b8-54e3-4e69-9cff-5e1801f207e5-Windows.svg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\93000233-f59e-40a7-9e66-8cad9cdc07ca-SonicLogo.avif))">
+      <SourceType>Package</SourceType>
+      <SourceId>FinalProject-Back</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FinalProject-Back</BasePath>
+      <RelativePath>assets/images/93000233-f59e-40a7-9e66-8cad9cdc07ca-SonicLogo.avif</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\93000233-f59e-40a7-9e66-8cad9cdc07ca-SonicLogo.avif))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\9431a8cb-9134-446e-9ed8-059221fc30fa-OutlastBanner3.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>FinalProject-Back</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FinalProject-Back</BasePath>
+      <RelativePath>assets/images/9431a8cb-9134-446e-9ed8-059221fc30fa-OutlastBanner3.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\9431a8cb-9134-446e-9ed8-059221fc30fa-OutlastBanner3.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\9680864d-f936-4171-8c1e-a005d2f51a22-HouseFlipperBanner2.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>FinalProject-Back</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FinalProject-Back</BasePath>
+      <RelativePath>assets/images/9680864d-f936-4171-8c1e-a005d2f51a22-HouseFlipperBanner2.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\9680864d-f936-4171-8c1e-a005d2f51a22-HouseFlipperBanner2.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\9a339e88-007e-4de2-b326-e5cc0113f0aa-B4Bmain.avif))">
       <SourceType>Package</SourceType>
@@ -368,6 +672,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\9d47c86b-0ad9-4710-9e75-218c8b85a53c-horizonLogo.png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\9f309c5f-fa73-465d-adf3-139b75a972d3-OutlastMain.avif))">
+      <SourceType>Package</SourceType>
+      <SourceId>FinalProject-Back</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FinalProject-Back</BasePath>
+      <RelativePath>assets/images/9f309c5f-fa73-465d-adf3-139b75a972d3-OutlastMain.avif</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\9f309c5f-fa73-465d-adf3-139b75a972d3-OutlastMain.avif))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\a1f9d846-074d-4cdd-b580-10bba0b0d84d-touch-the-color-logo.avif))">
       <SourceType>Package</SourceType>
       <SourceId>FinalProject-Back</SourceId>
@@ -384,6 +704,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\a1f9d846-074d-4cdd-b580-10bba0b0d84d-touch-the-color-logo.avif))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\a811f5b7-f567-40b9-b434-50d03f564778-HouseFlipperBanner1.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>FinalProject-Back</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FinalProject-Back</BasePath>
+      <RelativePath>assets/images/a811f5b7-f567-40b9-b434-50d03f564778-HouseFlipperBanner1.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\a811f5b7-f567-40b9-b434-50d03f564778-HouseFlipperBanner1.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\a9fd35fa-f721-46af-8de3-df93e65d0b1d-RDR2Logo.avif))">
       <SourceType>Package</SourceType>
       <SourceId>FinalProject-Back</SourceId>
@@ -399,6 +735,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\a9fd35fa-f721-46af-8de3-df93e65d0b1d-RDR2Logo.avif))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\aaca2802-9084-4470-b309-1af3f2aeecab-EvilWithinMain.avif))">
+      <SourceType>Package</SourceType>
+      <SourceId>FinalProject-Back</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FinalProject-Back</BasePath>
+      <RelativePath>assets/images/aaca2802-9084-4470-b309-1af3f2aeecab-EvilWithinMain.avif</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\aaca2802-9084-4470-b309-1af3f2aeecab-EvilWithinMain.avif))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\ad7b3cfe-c845-484d-aee1-530a41faaa34-horizon1.jpg))">
       <SourceType>Package</SourceType>
@@ -431,6 +783,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\b0570bac-a1c1-441b-b7ac-7460be184420-GTAV-banner.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\b0850679-b597-4b97-b881-4336bfdf43f8-HouseFlipperBanner3.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>FinalProject-Back</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FinalProject-Back</BasePath>
+      <RelativePath>assets/images/b0850679-b597-4b97-b881-4336bfdf43f8-HouseFlipperBanner3.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\b0850679-b597-4b97-b881-4336bfdf43f8-HouseFlipperBanner3.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\b5697eb4-1b3b-4216-817b-95e5a8b88228-FarCry6Logo.avif))">
       <SourceType>Package</SourceType>
@@ -480,6 +848,38 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\bb48466c-edde-4842-9ceb-4c582703fb02-B4BLogo.avif))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\bf20733d-bb5a-4e0e-a6f1-6acf91c35927-EvilWithinBanner2.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>FinalProject-Back</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FinalProject-Back</BasePath>
+      <RelativePath>assets/images/bf20733d-bb5a-4e0e-a6f1-6acf91c35927-EvilWithinBanner2.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\bf20733d-bb5a-4e0e-a6f1-6acf91c35927-EvilWithinBanner2.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\c206ffb3-6dab-4217-9334-7c492dffed0b-AlanWakeBanner3.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>FinalProject-Back</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FinalProject-Back</BasePath>
+      <RelativePath>assets/images/c206ffb3-6dab-4217-9334-7c492dffed0b-AlanWakeBanner3.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\c206ffb3-6dab-4217-9334-7c492dffed0b-AlanWakeBanner3.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\c40a98d5-c748-47bf-acba-f1bad77fd1d4-SinperElitebanner3.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>FinalProject-Back</SourceId>
@@ -528,6 +928,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cadf1eea-9999-4cea-8ee4-fa10bab4f74c-FarCry6Banner3.png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cdcfe2a9-0aec-4c18-8eff-df00eee7a2bb-OutlastBanner4.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>FinalProject-Back</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FinalProject-Back</BasePath>
+      <RelativePath>assets/images/cdcfe2a9-0aec-4c18-8eff-df00eee7a2bb-OutlastBanner4.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\cdcfe2a9-0aec-4c18-8eff-df00eee7a2bb-OutlastBanner4.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\d11fdf5a-58ba-482e-bd62-e360bff561d9-FarCry6Main.avif))">
       <SourceType>Package</SourceType>
       <SourceId>FinalProject-Back</SourceId>
@@ -543,6 +959,38 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\d11fdf5a-58ba-482e-bd62-e360bff561d9-FarCry6Main.avif))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\d2b717b7-e644-456a-8e21-e86db9e08e01-SpongeBobBanner1.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>FinalProject-Back</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FinalProject-Back</BasePath>
+      <RelativePath>assets/images/d2b717b7-e644-456a-8e21-e86db9e08e01-SpongeBobBanner1.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\d2b717b7-e644-456a-8e21-e86db9e08e01-SpongeBobBanner1.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\d948d125-0599-433f-9005-78c45e4e1787-AlanWakeMain.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>FinalProject-Back</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FinalProject-Back</BasePath>
+      <RelativePath>assets/images/d948d125-0599-433f-9005-78c45e4e1787-AlanWakeMain.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\d948d125-0599-433f-9005-78c45e4e1787-AlanWakeMain.jpeg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\dd45bd54-cb36-4526-946f-5d017a029ab8-B4Bbanner2.jpg))">
       <SourceType>Package</SourceType>
@@ -575,6 +1023,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\e16e0585-ad18-416a-a800-ef3fe9f4cdaf-horizon3.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\e56d753b-72b2-478e-b5eb-25eb69d7723b-HouseFlipperMain.avif))">
+      <SourceType>Package</SourceType>
+      <SourceId>FinalProject-Back</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FinalProject-Back</BasePath>
+      <RelativePath>assets/images/e56d753b-72b2-478e-b5eb-25eb69d7723b-HouseFlipperMain.avif</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\e56d753b-72b2-478e-b5eb-25eb69d7723b-HouseFlipperMain.avif))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\f0f15d1c-e96a-4184-b755-d7e10d39434f-SniperEliteMain.avif))">
       <SourceType>Package</SourceType>
@@ -639,6 +1103,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\faf95b9f-b0a2-4a04-93a8-ef4e0e0230c7-BFVbanner2.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\fcfc8300-1be1-4b20-b40d-f1ef812c4167-SonicBanner1.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>FinalProject-Back</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FinalProject-Back</BasePath>
+      <RelativePath>assets/images/fcfc8300-1be1-4b20-b40d-f1ef812c4167-SonicBanner1.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\images\fcfc8300-1be1-4b20-b40d-f1ef812c4167-SonicBanner1.jpg))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>
