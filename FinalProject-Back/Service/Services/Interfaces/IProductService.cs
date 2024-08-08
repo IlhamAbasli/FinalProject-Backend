@@ -19,5 +19,8 @@ namespace Service.Services.Interfaces
         Task ChangeMainImage(int productId, int imageId);
         string GenerateRedeemCode();
         Task<ProductRedeemDto> GetByRedeemCode(string redeemCode);
+        int GetProductsPageCount(int count, int take);
+        Task<List<ProductDto>> GetAllPaginatedProducts(int page, int take = 12);
+        Task<int> GetCount();
     }
 }

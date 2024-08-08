@@ -3,6 +3,7 @@ using FinalProject_Back.Helpers.Extensions;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Repository.Helpers.Exceptions;
+using Service.DTOs.News;
 using Service.DTOs.Product;
 using Service.Services;
 using Service.Services.Interfaces;
@@ -219,6 +220,18 @@ namespace FinalProject_Back.Controllers
         {
             var product = await _productService.GetByRedeemCode(redeemCode);
             return Ok(product);
+        }
+
+
+        [HttpGet]
+        public async Task<IActionResult> GetAllPaginated([FromQuery] int page = 1)
+        {
+            var paginatedDatas = await _productService.GetAllPaginatedProducts(page);
+            var productsCount = await _productService.GetCount();
+            var pageCount = _productService.GetProductsPageCount(productsCount, 12);
+
+            var model = new ProductsPageDto { Products = paginatedDatas, PageCount = pageCount };
+            return Ok(model);
         }
     }
 }

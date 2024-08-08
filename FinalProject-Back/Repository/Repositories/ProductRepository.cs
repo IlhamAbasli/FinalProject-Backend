@@ -55,8 +55,17 @@ namespace Repository.Repositories
         public async Task<Product> GetByRedeemCode(string redeemCode)
         {
             var existData = await _entities.Include(m => m.ProductImages).FirstOrDefaultAsync(m => m.RedeemCode == redeemCode);
-            //MNV9Y-AFOVH-4SJPL-OCQ6K
             return existData;
+        }
+
+        public async Task<List<Product>> GetAllPaginatedProducts(int page, int take = 12)
+        {
+            return await _entities.Include(m => m.ProductImages).Include(m=>m.ProductType).Skip((page - 1) * take).Take(take).ToListAsync();
+        }
+
+        public async Task<int> GetCount()
+        {
+            return await _entities.CountAsync();
         }
     }
 }

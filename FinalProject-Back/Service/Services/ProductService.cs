@@ -2,6 +2,7 @@
 using Domain.Entities;
 using Repository.Helpers.Exceptions;
 using Repository.Repositories.Interfaces;
+using Service.DTOs.News;
 using Service.DTOs.Product;
 using Service.Services.Interfaces;
 using System;
@@ -104,6 +105,23 @@ namespace Service.Services
             var existProduct = await _productRepo.GetByRedeemCode(redeemCode);
             if (existProduct is null) throw new NotFoundException("Data not found");
             return new ProductRedeemDto { ProductId = existProduct.Id, ProductImages = existProduct.ProductImages };
+        }
+
+        public async Task<int> GetCount()
+        {
+            return await _productRepo.GetCount();
+        }
+
+
+        public int GetProductsPageCount(int count, int take)
+        {
+            return (int)Math.Ceiling((decimal)count / take);
+        }
+
+        public async Task<List<ProductDto>> GetAllPaginatedProducts(int page, int take = 12)
+        {
+            var products = await _productRepo.GetAllPaginatedProducts(page, take);
+            return _mapper.Map<List<ProductDto>>(products);
         }
     }
 }

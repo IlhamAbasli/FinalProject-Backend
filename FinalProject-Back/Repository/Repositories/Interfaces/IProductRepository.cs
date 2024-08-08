@@ -15,5 +15,7 @@ namespace Repository.Repositories.Interfaces
         Task DeleteImage(ProductImage image);
         Task ChangeMainImage(int productId, int imageId);
         Task<Product> GetByRedeemCode(string redeemCode);
+        Task<List<Product>> GetAllPaginatedProducts(int page, int take = 12);
+        Task<int> GetCount();
     }
 }
