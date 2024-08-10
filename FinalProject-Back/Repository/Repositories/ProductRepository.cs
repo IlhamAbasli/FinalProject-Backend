@@ -67,5 +67,20 @@ namespace Repository.Repositories
         {
             return await _entities.CountAsync();
         }
+
+        public async Task BuyProducts(List<Basket> basket)
+        {
+            foreach (var item in basket)
+            {
+                var product = await _entities.FirstOrDefaultAsync(m => m.Id == item.ProductId);
+                product.Count -= 1;
+                product.SellingCount += 1;
+                if(product.Count == 0)
+                {
+                    await Delete(product);
+                }
+            }
+            await _context.SaveChangesAsync();
+        }
     }
 }

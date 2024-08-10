@@ -34,6 +34,11 @@ namespace Service.Services
             await _libraryRepo.Create(_mapper.Map<Library>(model));
         }
 
+        public async Task AddLibrary(AddLibraryDto model)
+        {
+            await _libraryRepo.Create(_mapper.Map<Library>(model));
+        }
+
         public int GetLibraryPageCount(int count, int take)
         {
             return (int)Math.Ceiling((decimal)count / take);
@@ -48,6 +53,11 @@ namespace Service.Services
         public async Task<int> GetCount(string userId)
         {
             return await _libraryRepo.GetCount(userId);
+        }
+
+        public async Task<List<int>> GetUserLibraryIds(string userId)
+        {
+            return await _libraryRepo.GetUserLibraryIds(userId);
         }
     }
 }

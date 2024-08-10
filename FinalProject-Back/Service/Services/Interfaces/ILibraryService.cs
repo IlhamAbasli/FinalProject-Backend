@@ -14,5 +14,7 @@ namespace Service.Services.Interfaces
         Task<List<Library>> GetAllPaginatedProducts(int page, string userId, int take = 8);
         int GetLibraryPageCount(int count, int take);
         Task<int> GetCount(string userId);
+        Task<List<int>> GetUserLibraryIds(string userId);
+        Task AddLibrary(AddLibraryDto model);
     }
 }

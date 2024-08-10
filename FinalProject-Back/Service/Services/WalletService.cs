@@ -43,5 +43,11 @@ namespace Service.Services
             decimal balance = userBalance.Balance;
             return new WalletDto { Balance = balance };
         }
+
+        public async Task RemoveFunds(WalletDecreaseDto model)
+        {
+            var userBalance = await _walletRepo.GetUserBalance(model.UserId);
+            await _walletRepo.RemoveFundsFromWallet(_mapper.Map<Wallet>(model));
+        }
     }
 }

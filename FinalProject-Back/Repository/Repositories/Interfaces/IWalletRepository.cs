@@ -12,5 +12,6 @@ namespace Repository.Repositories.Interfaces
     {
         Task<Wallet> GetUserBalance(string userId);
         Task AddFundsToWallet(Wallet wallet);
+        Task RemoveFundsFromWallet(Wallet wallet);
     }
 }

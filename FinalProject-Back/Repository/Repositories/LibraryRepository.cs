@@ -35,5 +35,10 @@ namespace Repository.Repositories
         {
             return await _entities.Where(m => m.UserId == userId).CountAsync();
         }
+
+        public async Task<List<int>> GetUserLibraryIds(string userId)
+        {
+            return await _entities.Where(m => m.UserId == userId).Select(m => m.ProductId).ToListAsync();
+        }
     }
 }

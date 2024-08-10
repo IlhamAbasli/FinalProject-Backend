@@ -11,5 +11,6 @@ namespace Service.Services.Interfaces
     {
         Task AddFunds(WalletCreateDto model);
         Task<WalletDto> GetUserBalance(string userId);
+        Task RemoveFunds(WalletDecreaseDto model);
     }
 }

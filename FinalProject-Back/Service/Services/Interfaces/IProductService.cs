@@ -22,5 +22,6 @@ namespace Service.Services.Interfaces
         int GetProductsPageCount(int count, int take);
         Task<List<ProductDto>> GetAllPaginatedProducts(int page, int take = 12);
         Task<int> GetCount();
+        Task BuyProducts(List<Basket> basket);
     }
 }

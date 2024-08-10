@@ -123,5 +123,10 @@ namespace Service.Services
             var products = await _productRepo.GetAllPaginatedProducts(page, take);
             return _mapper.Map<List<ProductDto>>(products);
         }
+
+        public async Task BuyProducts(List<Basket> basket)
+        {
+            await _productRepo.BuyProducts(basket);
+        }
     }
 }

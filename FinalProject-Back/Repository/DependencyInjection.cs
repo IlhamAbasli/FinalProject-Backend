@@ -25,6 +25,7 @@ namespace Repository
             services.AddScoped<IWalletRepository, WalletRepository>();
             services.AddScoped<ILibraryRepository, LibraryRepository>();
             services.AddScoped<IWishlistRepository, WishlistRepository>();
+            services.AddScoped<IBasketRepository, BasketRepository>();
 
 
             return services;

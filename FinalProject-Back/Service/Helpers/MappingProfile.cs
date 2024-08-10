@@ -2,6 +2,7 @@
 using Domain.Entities;
 using Service.DTOs.Account;
 using Service.DTOs.Ad;
+using Service.DTOs.Basket;
 using Service.DTOs.Genre;
 using Service.DTOs.Library;
 using Service.DTOs.News;
@@ -47,12 +48,15 @@ namespace Service.Helpers
             CreateMap<RegisterDto, AppUser>();
 
             CreateMap<WalletCreateDto, Wallet>();
+            CreateMap<WalletDecreaseDto, Wallet>();
 
             CreateMap<UserUpdateDto,AppUser>();
 
             CreateMap<AddLibraryDto,Library>();
 
             CreateMap<AddWishlistDto,Wishlist>();
+
+            CreateMap<AddBasketDto,Basket>();
         }
 
     }

@@ -35,5 +35,11 @@ namespace FinalProject_Back.Controllers
             var model = new LibraryPageDto { LibraryProducts = paginatedDatas, PageCount = pageCount };
             return Ok(model);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> GetUserLibraryIds([FromQuery] string userId)
+        {
+            return Ok(await _libraryService.GetUserLibraryIds(userId));
+        }
     }
 }

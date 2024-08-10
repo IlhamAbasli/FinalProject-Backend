@@ -14,7 +14,5 @@ namespace Repository.Repositories.Interfaces
         Task<List<Wishlist>> GetUserWishlist(string userId);    
         Task<List<int>> GetUserWishlistIds(string userId);
         Task<Wishlist> GetUserWishlistProductById(int productId, string userId);
-
-
     }
 }

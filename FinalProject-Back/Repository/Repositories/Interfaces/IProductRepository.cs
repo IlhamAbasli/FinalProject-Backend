@@ -17,5 +17,6 @@ namespace Repository.Repositories.Interfaces
         Task<Product> GetByRedeemCode(string redeemCode);
         Task<List<Product>> GetAllPaginatedProducts(int page, int take = 12);
         Task<int> GetCount();
+        Task BuyProducts(List<Basket> basket);
     }
 }
