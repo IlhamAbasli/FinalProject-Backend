@@ -10,7 +10,7 @@ namespace Service.Services.Interfaces
 {
     public interface ILibraryService
     {
-        Task Create(AddLibraryDto model);
+        Task AddLibraryByRedeem(AddLibraryDto model);
         Task<List<Library>> GetAllPaginatedProducts(int page, string userId, int take = 8);
         int GetLibraryPageCount(int count, int take);
         Task<int> GetCount(string userId);

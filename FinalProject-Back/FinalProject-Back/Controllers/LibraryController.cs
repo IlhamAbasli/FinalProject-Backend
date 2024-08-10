@@ -18,9 +18,9 @@ namespace FinalProject_Back.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddLibrary([FromQuery]AddLibraryDto request)
+        public async Task<IActionResult> AddLibraryByRedeem([FromQuery]AddLibraryDto request)
         {
-            await _libraryService.Create(request);
+            await _libraryService.AddLibraryByRedeem(request);
             return Ok();
         }
 

@@ -16,14 +16,14 @@ namespace Repository.Repositories
     {
         public LibraryRepository(AppDbContext context) : base(context) { }
 
-        public async Task<Library> CheckExistUserProduct(int productId, string userId)
+        public async Task<bool> CheckExistUserProduct(int productId, string userId)
         {
             var existData = await _entities.Where(m=>m.UserId == userId).FirstOrDefaultAsync(m=>m.ProductId == productId);
             if(existData is not null)
             {
-                throw new BadRequestException("You can only use the same code once.");
+                return false;
             }
-            return null;
+            return true;
         }
 
         public async Task<List<Library>> GetAllPaginatedProducts(int page,string userId, int take = 8)

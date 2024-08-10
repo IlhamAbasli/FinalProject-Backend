@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Domain.Entities;
+using Repository.Helpers.Exceptions;
 using Repository.Repositories.Interfaces;
 using Service.DTOs.Library;
 using Service.DTOs.Product;
@@ -23,9 +24,13 @@ namespace Service.Services
         }
 
 
-        public async Task Create(AddLibraryDto model)
+        public async Task AddLibraryByRedeem(AddLibraryDto model)
         {
-            await _libraryRepo.CheckExistUserProduct(model.ProductId,model.UserId);
+            var existData = await _libraryRepo.CheckExistUserProduct(model.ProductId,model.UserId);
+            if (!existData)
+            {
+                throw new BadRequestException("You can only use the same code once.");
+            }
             await _libraryRepo.Create(_mapper.Map<Library>(model));
         }
 

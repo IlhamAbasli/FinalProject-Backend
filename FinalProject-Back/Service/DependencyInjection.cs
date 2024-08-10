@@ -24,6 +24,8 @@ namespace Service
             services.AddScoped<IPlatformProductsService, PlatformProductsService>();
             services.AddScoped<IAccountService, AccountService>();
             services.AddScoped<ILibraryService, LibraryService>();
+            services.AddScoped<IWalletService, WalletService>();
+            services.AddScoped<IWishlishtService, WishlistService>();
 
             return services;
         }
