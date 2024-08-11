@@ -26,9 +26,9 @@ namespace FinalProject_Back.Controllers
 
 
         [HttpGet]
-        public async Task<IActionResult> GetAllPaginated([FromQuery] string userId,[FromQuery] int page = 1)
+        public async Task<IActionResult> GetAllPaginated([FromQuery] string userId, [FromQuery] string sortType,[FromQuery] int page = 1)
         {
-            var paginatedDatas = await _libraryService.GetAllPaginatedProducts(page,userId);
+            var paginatedDatas = await _libraryService.GetAllPaginatedProducts(page,userId,sortType);
             var productsCount = await _libraryService.GetCount(userId);
             var pageCount = _libraryService.GetLibraryPageCount(productsCount, 8);
 

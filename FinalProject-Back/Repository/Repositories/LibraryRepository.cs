@@ -26,9 +26,23 @@ namespace Repository.Repositories
             return true;
         }
 
-        public async Task<List<Library>> GetAllPaginatedProducts(int page,string userId, int take = 8)
+        public async Task<List<Library>> GetAllPaginatedProducts(int page,string userId, string sortType, int take = 8)
         {
-            return await _entities.Where(m => m.UserId == userId).Include(m => m.Product).ThenInclude(m=>m.ProductImages).Skip((page - 1) * take).Take(take).ToListAsync();
+            var paginatedDatas = await _entities.Where(m => m.UserId == userId).Include(m => m.Product).ThenInclude(m => m.ProductImages).Skip((page - 1) * take).Take(take).ToListAsync();
+            switch (sortType)
+            {
+                case "Recently Purchased":
+                    return await _entities.Where(m => m.UserId == userId).Include(m => m.Product).ThenInclude(m => m.ProductImages).OrderByDescending(m => m.Id).Skip((page - 1) * take).Take(take).ToListAsync();
+                case "All":
+                    return paginatedDatas;
+                case "Alphabetical A-Z":
+                    return await _entities.Where(m => m.UserId == userId).Include(m => m.Product).ThenInclude(m => m.ProductImages).OrderByDescending(m => m.Product.ProductName).Skip((page - 1) * take).Take(take).ToListAsync();
+                case "Alphabetical Z-A":
+                    return await _entities.Where(m => m.UserId == userId).Include(m => m.Product).ThenInclude(m => m.ProductImages).OrderBy(m => m.Product.ProductName).Skip((page - 1) * take).Take(take).ToListAsync();
+                default:
+                    break;
+            }
+            return paginatedDatas;
         }
 
         public async Task<int> GetCount(string userId)

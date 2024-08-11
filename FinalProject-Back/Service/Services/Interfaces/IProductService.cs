@@ -20,7 +20,7 @@ namespace Service.Services.Interfaces
         string GenerateRedeemCode();
         Task<ProductRedeemDto> GetByRedeemCode(string redeemCode);
         int GetProductsPageCount(int count, int take);
-        Task<List<ProductDto>> GetAllPaginatedProducts(int page, int take = 12);
+        Task<List<ProductDto>> GetAllPaginatedProducts(int page, string sortType, int take = 12);
         Task<int> GetCount();
         Task BuyProducts(List<Basket> basket);
     }

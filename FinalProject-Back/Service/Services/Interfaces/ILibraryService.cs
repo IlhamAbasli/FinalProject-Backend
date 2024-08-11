@@ -11,7 +11,7 @@ namespace Service.Services.Interfaces
     public interface ILibraryService
     {
         Task AddLibraryByRedeem(AddLibraryDto model);
-        Task<List<Library>> GetAllPaginatedProducts(int page, string userId, int take = 8);
+        Task<List<Library>> GetAllPaginatedProducts(int page, string userId,string sortType, int take = 8);
         int GetLibraryPageCount(int count, int take);
         Task<int> GetCount(string userId);
         Task<List<int>> GetUserLibraryIds(string userId);

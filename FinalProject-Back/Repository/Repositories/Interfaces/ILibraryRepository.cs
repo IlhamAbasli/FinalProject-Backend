@@ -11,7 +11,7 @@ namespace Repository.Repositories.Interfaces
     public interface ILibraryRepository : IBaseRepository<Library>
     {
         Task<bool> CheckExistUserProduct(int productId,string userId);
-        Task<List<Library>> GetAllPaginatedProducts(int page, string userId, int take = 8);
+        Task<List<Library>> GetAllPaginatedProducts(int page, string userId, string sortType,int take = 8);
         Task<int> GetCount(string userId);
         Task<List<int>> GetUserLibraryIds(string userId);
     }

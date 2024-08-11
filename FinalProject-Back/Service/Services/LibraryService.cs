@@ -44,9 +44,9 @@ namespace Service.Services
             return (int)Math.Ceiling((decimal)count / take);
         }
 
-        public async Task<List<Library>> GetAllPaginatedProducts(int page,string userId, int take = 8)
+        public async Task<List<Library>> GetAllPaginatedProducts(int page,string userId, string sortType, int take = 8)
         {
-            var products = await _libraryRepo.GetAllPaginatedProducts(page,userId, take);
+            var products = await _libraryRepo.GetAllPaginatedProducts(page,userId,sortType ,take);
             return products;
         }
 

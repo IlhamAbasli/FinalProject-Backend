@@ -118,9 +118,9 @@ namespace Service.Services
             return (int)Math.Ceiling((decimal)count / take);
         }
 
-        public async Task<List<ProductDto>> GetAllPaginatedProducts(int page, int take = 12)
+        public async Task<List<ProductDto>> GetAllPaginatedProducts(int page,string sortType, int take = 12)
         {
-            var products = await _productRepo.GetAllPaginatedProducts(page, take);
+            var products = await _productRepo.GetAllPaginatedProducts(page, sortType, take);
             return _mapper.Map<List<ProductDto>>(products);
         }
 

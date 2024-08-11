@@ -224,9 +224,9 @@ namespace FinalProject_Back.Controllers
 
 
         [HttpGet]
-        public async Task<IActionResult> GetAllPaginated([FromQuery] int page = 1)
+        public async Task<IActionResult> GetAllPaginated([FromQuery] string sortType,[FromQuery] int page = 1)
         {
-            var paginatedDatas = await _productService.GetAllPaginatedProducts(page);
+            var paginatedDatas = await _productService.GetAllPaginatedProducts(page,sortType);
             var productsCount = await _productService.GetCount();
             var pageCount = _productService.GetProductsPageCount(productsCount, 12);
 

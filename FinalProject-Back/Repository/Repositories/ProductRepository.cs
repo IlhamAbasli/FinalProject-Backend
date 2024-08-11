@@ -58,9 +58,25 @@ namespace Repository.Repositories
             return existData;
         }
 
-        public async Task<List<Product>> GetAllPaginatedProducts(int page, int take = 12)
+        public async Task<List<Product>> GetAllPaginatedProducts(int page,string sortType, int take = 12)
         {
-            return await _entities.Include(m => m.ProductImages).Include(m=>m.ProductType).Skip((page - 1) * take).Take(take).ToListAsync();
+            var paginatedDatas = await _entities.Include(m => m.ProductImages).Include(m => m.ProductType).Skip((page - 1) * take).Take(take).ToListAsync();
+            switch (sortType)
+            {
+                case "New Release":
+                    return await _entities.Include(m => m.ProductImages).Include(m => m.ProductType).OrderByDescending(m=>m.Id).Skip((page - 1) * take).Take(take).ToListAsync();
+                case "All":
+                    return paginatedDatas;
+                case "Price: High to Low":
+                    return await _entities.Include(m => m.ProductImages).Include(m => m.ProductType).OrderByDescending(m=>m.ProductPrice).Skip((page - 1) * take).Take(take).ToListAsync();
+                case "Price: Low to High":
+                    return await _entities.Include(m => m.ProductImages).Include(m => m.ProductType).OrderBy(m => m.ProductPrice).Skip((page - 1) * take).Take(take).ToListAsync();
+                default:
+                    break;
+            }
+
+            return paginatedDatas;
+            
         }
 
         public async Task<int> GetCount()
