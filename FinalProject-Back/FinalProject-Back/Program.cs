@@ -49,6 +49,8 @@ builder.Services.Configure<IdentityOptions>(opt =>
 
     opt.User.RequireUniqueEmail = true;
 
+    opt.SignIn.RequireConfirmedEmail = true;
+
 });
 
 builder.Services.Configure<JWTSettings>(builder.Configuration.GetSection("JWTSettings"));

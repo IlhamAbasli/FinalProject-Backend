@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jG6SzgqVndR7uV3q+b5iwfrh6YJjw4OaM0OJhHuAO4g=",
+  "Hash": "6ANOXTu9UGoPD37NiesBjlkfUXfOLiPTnxjYfUtxaV0=",
   "Source": "FinalProject-Back",
   "BasePath": "_content/FinalProject-Back",
   "Mode": "Default",
@@ -1252,6 +1252,44 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\e56d753b-72b2-478e-b5eb-25eb69d7723b-HouseFlipperMain.avif"
     },
     {
+      "Identity": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\emailconfirmicon.png",
+      "SourceId": "FinalProject-Back",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\",
+      "BasePath": "_content/FinalProject-Back",
+      "RelativePath": "assets/images/emailconfirmicon.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\emailconfirmicon.png"
+    },
+    {
+      "Identity": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\emailconfirmicon.svg",
+      "SourceId": "FinalProject-Back",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\",
+      "BasePath": "_content/FinalProject-Back",
+      "RelativePath": "assets/images/emailconfirmicon.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\emailconfirmicon.svg"
+    },
+    {
       "Identity": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\f0f15d1c-e96a-4184-b755-d7e10d39434f-SniperEliteMain.avif",
       "SourceId": "FinalProject-Back",
       "SourceType": "Discovered",
@@ -1345,6 +1383,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\fcfc8300-1be1-4b20-b40d-f1ef812c4167-SonicBanner1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\templates\\emailconfirmation.html",
+      "SourceId": "FinalProject-Back",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\",
+      "BasePath": "_content/FinalProject-Back",
+      "RelativePath": "templates/emailconfirmation.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\templates\\emailconfirmation.html"
     }
   ]
 }

@@ -14,6 +14,7 @@ namespace Service.Services.Interfaces
         Task<UserRoleResponse> AddRoleToUser(UserRoleDto model);
         Task<LoginResponse> SignIn(LoginDto model);
         Task UpdateUser(string userId, UserUpdateDto model);
+        Task ConfirmEmail(string userId, string token);
         Task CreateRoles();
     }
 }

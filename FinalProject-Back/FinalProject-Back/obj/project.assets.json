@@ -1219,7 +1219,9 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "AutoMapper": "13.0.1",
+          "MailKit": "4.7.1.1",
           "Microsoft.AspNetCore.Http.Features": "5.0.17",
+          "MimeKit": "4.7.1",
           "Repository": "1.0.0"
         },
         "compile": {

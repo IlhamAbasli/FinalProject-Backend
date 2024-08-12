@@ -261,6 +261,14 @@
       "PackagePath": "staticwebassets\\assets\\images\\e56d753b-72b2-478e-b5eb-25eb69d7723b-HouseFlipperMain.avif"
     },
     {
+      "Id": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\emailconfirmicon.png",
+      "PackagePath": "staticwebassets\\assets\\images\\emailconfirmicon.png"
+    },
+    {
+      "Id": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\emailconfirmicon.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\emailconfirmicon.svg"
+    },
+    {
       "Id": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\f0f15d1c-e96a-4184-b755-d7e10d39434f-SniperEliteMain.avif",
       "PackagePath": "staticwebassets\\assets\\images\\f0f15d1c-e96a-4184-b755-d7e10d39434f-SniperEliteMain.avif"
     },
@@ -279,6 +287,10 @@
     {
       "Id": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\fcfc8300-1be1-4b20-b40d-f1ef812c4167-SonicBanner1.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\fcfc8300-1be1-4b20-b40d-f1ef812c4167-SonicBanner1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\templates\\emailconfirmation.html",
+      "PackagePath": "staticwebassets\\templates\\emailconfirmation.html"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.FinalProject-Back.Microsoft.AspNetCore.StaticWebAssets.props",

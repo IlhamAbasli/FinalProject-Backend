@@ -1,21 +1,23 @@
 ﻿using AutoMapper;
 using Domain.Entities;
+using MailKit.Security;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using MimeKit.Text;
+using MimeKit;
 using Repository.Helpers.Exceptions;
 using Repository.Repositories.Interfaces;
 using Service.DTOs.Account;
 using Service.Helpers.Account;
 using Service.Helpers.Enums;
 using Service.Services.Interfaces;
-using System;
-using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
+using MailKit.Net.Smtp;
 
 namespace Service.Services
 {
@@ -73,7 +75,68 @@ namespace Service.Services
 
             await _userManager.AddToRoleAsync(user, Roles.Member.ToString());
 
-            return new RegisterResponse { Success = true, Errors = null };
+            string token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+
+            string url = GenerateEmailConfirmationLink(user.Id, token);
+            string html = string.Empty;
+
+            using (StreamReader reader = new("wwwroot/templates/emailconfirmation.html"))
+            {
+                html = await reader.ReadToEndAsync();
+            }
+
+            html = html.Replace("{link}", url);
+            html = html.Replace("{Username}", $"{user.Firstname} {user.Lastname}");
+            string subject = "Email confirmation";
+
+            SendMail(user.Email, subject, html);
+
+
+            return new RegisterResponse { Success = true,Errors = null };
+        }
+
+        public async Task ConfirmEmail(string userId,string token)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+            var decodedToken = HttpUtility.UrlDecode(token);
+            await _userManager.ConfirmEmailAsync(user, decodedToken);
+        }
+
+        public void SendMail(string to, string subject, string html, string from = null)
+        {
+            // create email message
+            var email = new MimeMessage();
+            email.From.Add(MailboxAddress.Parse("ilhamra@code.edu.az"));
+            email.To.Add(MailboxAddress.Parse(to));
+            email.Subject = subject;
+            email.Body = new TextPart(TextFormat.Html) { Text = html };
+
+            // send email
+            using var smtp = new SmtpClient();
+            smtp.Connect("smtp.gmail.com", 587, SecureSocketOptions.StartTls);
+            smtp.Authenticate("ilhamra@code.edu.az", "vtiw pogc prau vewp");
+            smtp.Send(email);
+            smtp.Disconnect(true);
+        }
+
+        private string GenerateEmailConfirmationLink(string userId,string token)
+        {
+            var uriBuilder = new UriBuilder("http://localhost:5173/emailconfirmation");
+            var query = HttpUtility.ParseQueryString(uriBuilder.ToString());
+            query["userId"] = userId;
+            query["token"] = HttpUtility.UrlEncode(token);
+            uriBuilder.Query = query.ToString();
+            return uriBuilder.ToString();   
+        }
+
+        private string GeneratePasswordResetLink(string userId, string token)
+        {
+            var uriBuilder = new UriBuilder("http://localhost:5173/resetpassword");
+            var query = HttpUtility.ParseQueryString(uriBuilder.ToString());
+            query["userId"] = userId;
+            query["token"] = HttpUtility.UrlEncode(token);
+            uriBuilder.Query = query.ToString();
+            return uriBuilder.ToString();
         }
 
         public async Task<LoginResponse> SignIn(LoginDto model)
@@ -84,7 +147,7 @@ namespace Service.Services
                 user = await _userManager.FindByNameAsync(model.EmailOrUsername);
             }
 
-            if (user is null)
+            if (user is null || !user.EmailConfirmed)
             {
                 return new LoginResponse { Success = false, Message = "Login failed,check your login credential" };
             }
@@ -148,6 +211,37 @@ namespace Service.Services
             user.Firstname = model.Firstname;
             user.Lastname = model.Lastname;
             await _userManager.UpdateAsync(user);
+        }
+
+        public async Task<ForgetPasswordResponse> ForgetPassword(ForgetPasswordDto model)
+        {
+            AppUser existUser = await _userManager.FindByEmailAsync(model.Email);
+            if (existUser is null)
+            {
+                return new ForgetPasswordResponse { Success = false, Message = "Sorry, your account was not found" };
+            }
+
+            string token = await _userManager.GeneratePasswordResetTokenAsync(existUser);
+
+            string url = GeneratePasswordResetLink(existUser.Id, token);
+
+            string html = string.Empty;
+
+            using (StreamReader reader = new("wwwroot/templates/emailconfirmation.html"))
+            {
+                html = await reader.ReadToEndAsync();
+            }
+
+            html = html.Replace("{link}", url);
+            html = html.Replace("{Username}", $"{existUser.Firstname} {existUser.Lastname}");
+            string subject = "Verify to reset your password";
+
+            SendMail(existUser.Email, subject, html);
+        }
+
+        public async Task ResetPassword()
+        {
+
         }
     }
 }
