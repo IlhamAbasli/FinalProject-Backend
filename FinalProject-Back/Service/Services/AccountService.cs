@@ -237,11 +237,21 @@ namespace Service.Services
             string subject = "Verify to reset your password";
 
             SendMail(existUser.Email, subject, html);
+
+            return new ForgetPasswordResponse { Success = true, Message = "Check your email" };
         }
 
-        public async Task ResetPassword()
+        public async Task ResetPassword(ResetPasswordDto model)
         {
+            var existUser = await _userManager.FindByIdAsync(model.UserId);
 
+            if(existUser is null)
+            {
+                throw new NotFoundException("User not found");
+            }
+            var decodedToken = HttpUtility.UrlDecode(model.Token);
+
+            await _userManager.ResetPasswordAsync(existUser, decodedToken, model.NewPassword);
         }
     }
 }

@@ -15,6 +15,8 @@ namespace Service.Services.Interfaces
         Task<LoginResponse> SignIn(LoginDto model);
         Task UpdateUser(string userId, UserUpdateDto model);
         Task ConfirmEmail(string userId, string token);
+        Task ResetPassword(ResetPasswordDto model);
+        Task<ForgetPasswordResponse> ForgetPassword(ForgetPasswordDto model);
         Task CreateRoles();
     }
 }

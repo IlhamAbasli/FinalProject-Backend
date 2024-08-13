@@ -55,5 +55,19 @@ namespace FinalProject_Back.Controllers
             await _accountService.UpdateUser(userId,request);
             return Ok();
         }
+
+        [HttpGet]
+        public async Task<IActionResult> ForgetPassword([FromQuery] ForgetPasswordDto request)
+        {
+            return Ok(await _accountService.ForgetPassword(request));
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> ResetPassword([FromForm] ResetPasswordDto request)
+        {
+            await _accountService.ResetPassword(request);
+            return Ok();
+        }
     }
 }
