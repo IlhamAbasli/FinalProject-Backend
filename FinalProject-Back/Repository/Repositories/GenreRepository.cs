@@ -18,5 +18,10 @@ namespace Repository.Repositories
         {
             return await _entities.Include(m=>m.Products).ThenInclude(m=>m.ProductImages).ToListAsync();
         }
+
+        public async Task<bool> GenreIsExist(string genreName)
+        {
+            return await _entities.AnyAsync(m=>m.GenreName == genreName.Trim());
+        }
     }
 }

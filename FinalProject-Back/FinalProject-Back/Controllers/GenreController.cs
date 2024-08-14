@@ -18,6 +18,11 @@ namespace FinalProject_Back.Controllers
         [HttpPost]
         public async Task<IActionResult> Create([FromForm] GenreCreateDto request)
         {
+            var existGenre = await _genreService.GenreIsExist(request.GenreName);
+            if(existGenre)
+            {
+                throw new BadRequestException("Genre has already exist");
+            }
             await _genreService.Create(request);
             return CreatedAtAction(nameof(Create), new { response = "Success" });
         }
@@ -50,6 +55,12 @@ namespace FinalProject_Back.Controllers
         public async Task<IActionResult> Edit([FromRoute] int? id, [FromForm]  GenreEditDto request)
         {
             if (id is null) throw new BadRequestException("ID can`t leave empty");
+
+            var existGenre = await _genreService.GenreIsExist(request.GenreName);
+            if (existGenre)
+            {
+                throw new BadRequestException("Genre has already exist");
+            }
 
             await _genreService.Edit((int)id, request);
             return Ok();

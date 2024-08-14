@@ -14,5 +14,6 @@ namespace Service.Services.Interfaces
         Task Delete(int id);
         Task<TypeDto> GetById(int id);
         Task Edit(int id,TypeEditDto model);
+        Task<bool> TypeIsExist(string typeName);
     }
 }

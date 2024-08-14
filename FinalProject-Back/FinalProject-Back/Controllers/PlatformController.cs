@@ -23,6 +23,12 @@ namespace FinalProject_Back.Controllers
         [HttpPost]
         public async Task<IActionResult> Create([FromForm] PlatformCreateDto request)
         {
+            var existPlatform = await _platformService.PlatformIsExist(request.PlatformName);
+            if (existPlatform)
+            {
+                throw new BadRequestException("Platform has already exist");
+            }
+
             string fileName = Guid.NewGuid().ToString() + "-" + request.PlatformLogo.FileName;
             string path = Path.Combine(_env.WebRootPath, "assets/images", fileName);
             await request.PlatformLogo.SaveFileToLocalAsync(path);
@@ -65,6 +71,12 @@ namespace FinalProject_Back.Controllers
             if (id is null) throw new BadRequestException("ID can`t leave empty");
             var existData = await _platformService.GetById((int)id);
             if (existData is null) throw new NotFoundException("Ad not found with this ID");
+
+            var existPlatform = await _platformService.PlatformIsExist(request.PlatformName);
+            if (existPlatform)
+            {
+                throw new BadRequestException("Platform has already exist");
+            }
 
             request.PlatformLogo = existData.PlatformLogo;
             if(request.NewPlatformLogo is not null)

@@ -19,6 +19,11 @@ namespace FinalProject_Back.Controllers
         [HttpPost]
         public async Task<IActionResult> Create([FromForm] TypeCreateDto request)
         {
+            var existType = await _typeService.TypeIsExist(request.TypeName);
+            if (existType)
+            {
+                throw new BadRequestException("Type has already exist");
+            }
             await _typeService.Create(request);
             return CreatedAtAction(nameof(Create), new { response = "Success" });
         }
@@ -41,6 +46,12 @@ namespace FinalProject_Back.Controllers
         public async Task<IActionResult> Edit([FromRoute] int? id, [FromForm] TypeEditDto request)
         {
             if (id is null) throw new BadRequestException("ID can`t leave empty");
+
+            var existType = await _typeService.TypeIsExist(request.TypeName);
+            if (existType)
+            {
+                throw new BadRequestException("Type has already exist");
+            }
             await _typeService.Edit((int)id, request);
             return Ok();
         }

@@ -59,5 +59,10 @@ namespace Service.Services
             if (existData is null) throw new NotFoundException("Data not found with this ID");
             return existData;
         }
+
+        public async Task<bool> PlatformIsExist(string platformName)
+        {
+            return await _platformRepo.PlatformIsExist(platformName);
+        }
     }
 }

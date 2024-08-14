@@ -92,10 +92,10 @@ namespace Service.Services
             SendMail(user.Email, subject, html);
 
 
-            return new RegisterResponse { Success = true,Errors = null };
+            return new RegisterResponse { Success = true, Errors = null };
         }
 
-        public async Task ConfirmEmail(string userId,string token)
+        public async Task ConfirmEmail(string userId, string token)
         {
             var user = await _userManager.FindByIdAsync(userId);
             var decodedToken = HttpUtility.UrlDecode(token);
@@ -119,14 +119,14 @@ namespace Service.Services
             smtp.Disconnect(true);
         }
 
-        private string GenerateEmailConfirmationLink(string userId,string token)
+        private string GenerateEmailConfirmationLink(string userId, string token)
         {
             var uriBuilder = new UriBuilder("http://localhost:5173/emailconfirmation");
             var query = HttpUtility.ParseQueryString(uriBuilder.ToString());
             query["userId"] = userId;
             query["token"] = HttpUtility.UrlEncode(token);
             uriBuilder.Query = query.ToString();
-            return uriBuilder.ToString();   
+            return uriBuilder.ToString();
         }
 
         private string GeneratePasswordResetLink(string userId, string token)
@@ -172,12 +172,18 @@ namespace Service.Services
         {
             new Claim(JwtRegisteredClaimNames.Sid, userId),
             new Claim(JwtRegisteredClaimNames.Email, userEmail),
-            new Claim(JwtRegisteredClaimNames.GivenName, firstName),
-            new Claim(JwtRegisteredClaimNames.FamilyName, lastName),
             new Claim(JwtRegisteredClaimNames.Sub, username),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
             new Claim(ClaimTypes.NameIdentifier, username)
         };
+            if(firstName is not null)
+            {
+                claims.Add(new Claim(JwtRegisteredClaimNames.GivenName, firstName));
+            };
+            if(lastName is not null)
+            {
+                claims.Add(new Claim(JwtRegisteredClaimNames.FamilyName, lastName));
+            }
 
             roles.ForEach(role =>
             {
@@ -199,14 +205,14 @@ namespace Service.Services
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
 
-        public async Task UpdateUser(string userId,UserUpdateDto model)
+        public async Task UpdateUser(string userId, UserUpdateDto model)
         {
             var existUsername = await _userManager.FindByNameAsync(model.Username);
-            if(existUsername is not null)
+            var user = await _userManager.FindByIdAsync(userId);
+            if (existUsername is not null && user.UserName != existUsername.UserName)
             {
                 throw new BadRequestException("This username has already exist");
             }
-            var user = await _userManager.FindByIdAsync(userId);
             user.UserName = model.Username;
             user.Firstname = model.Firstname;
             user.Lastname = model.Lastname;
@@ -227,7 +233,7 @@ namespace Service.Services
 
             string html = string.Empty;
 
-            using (StreamReader reader = new("wwwroot/templates/emailconfirmation.html"))
+            using (StreamReader reader = new("wwwroot/templates/passwordresetconfirm.html"))
             {
                 html = await reader.ReadToEndAsync();
             }
@@ -245,7 +251,7 @@ namespace Service.Services
         {
             var existUser = await _userManager.FindByIdAsync(model.UserId);
 
-            if(existUser is null)
+            if (existUser is null)
             {
                 throw new NotFoundException("User not found");
             }

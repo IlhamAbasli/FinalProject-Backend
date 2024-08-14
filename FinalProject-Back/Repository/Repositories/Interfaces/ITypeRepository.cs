@@ -10,5 +10,6 @@ namespace Repository.Repositories.Interfaces
 {
     public interface ITypeRepository : IBaseRepository<ProductType>
     {
+        Task<bool> TypeIsExist(string typeName);
     }
 }

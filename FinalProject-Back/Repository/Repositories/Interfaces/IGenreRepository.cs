@@ -11,5 +11,6 @@ namespace Repository.Repositories.Interfaces
     public interface IGenreRepository : IBaseRepository<Genre>
     {
         Task<IEnumerable<Genre>> GetAllWithIncludes();
+        Task<bool> GenreIsExist(string genreName);
     }
 }

@@ -52,5 +52,10 @@ namespace Service.Services
             if (existData is null) throw new NotFoundException("Data not found with this ID");
             return _mapper.Map<TypeDto>(existData);
         }
+
+        public async Task<bool> TypeIsExist(string typeName)
+        {
+            return await _typeRepo.TypeIsExist(typeName);
+        }
     }
 }

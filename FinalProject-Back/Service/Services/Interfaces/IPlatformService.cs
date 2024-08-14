@@ -18,5 +18,6 @@ namespace Service.Services.Interfaces
         Task Delete(int id);
 
         Task Edit(int id ,PlatformEditDto model);
+        Task<bool> PlatformIsExist(string platformName);
     }
 }

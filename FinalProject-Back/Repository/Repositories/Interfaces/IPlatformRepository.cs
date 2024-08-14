@@ -10,5 +10,6 @@ namespace Repository.Repositories.Interfaces
 {
     public interface IPlatformRepository : IBaseRepository<Platform>
     {
+        Task<bool> PlatformIsExist(string platformName);
     }
 }

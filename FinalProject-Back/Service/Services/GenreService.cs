@@ -41,6 +41,11 @@ namespace Service.Services
             await _genreRepo.Update(existGenre);
         }
 
+        public async Task<bool> GenreIsExist(string genreName)
+        {
+            return await _genreRepo.GenreIsExist(genreName);
+        }
+
         public async Task<IEnumerable<GenreDto>> GetAll()
         {
             var genres = await _genreRepo.GetAllWithIncludes();
