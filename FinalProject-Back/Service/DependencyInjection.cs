@@ -28,6 +28,7 @@ namespace Service
             services.AddScoped<IWishlishtService, WishlistService>();
             services.AddScoped<IBasketService, BasketService>();
             services.AddScoped<ISubscriberService, SubscriberService>();
+            services.AddScoped<IUserService, UserService>();
 
             return services;
         }

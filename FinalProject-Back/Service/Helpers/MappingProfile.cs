@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Domain.Entities;
+using Microsoft.AspNetCore.Identity;
 using Service.DTOs.Account;
 using Service.DTOs.Ad;
 using Service.DTOs.Basket;
@@ -10,6 +11,7 @@ using Service.DTOs.Platform;
 using Service.DTOs.Product;
 using Service.DTOs.Subscriber;
 using Service.DTOs.Type;
+using Service.DTOs.User;
 using Service.DTOs.Wallet;
 using Service.DTOs.Wishlist;
 using System;
@@ -62,6 +64,9 @@ namespace Service.Helpers
 
             CreateMap<SubscriberCreateDto,Subscriber>();
             CreateMap<Subscriber,SubscriberDto>();
+
+            CreateMap<AppUser, UsersDto>();
+            CreateMap<IdentityRole,RolesDto>();
 
         }
 

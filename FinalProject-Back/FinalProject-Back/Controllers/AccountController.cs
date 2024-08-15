@@ -69,5 +69,12 @@ namespace FinalProject_Back.Controllers
             await _accountService.ResetPassword(request);
             return Ok();
         }
+
+        [HttpPut]
+        public async Task<IActionResult> ChangePassword([FromForm] ChangePasswordDto request)
+        {
+            
+            return Ok(await _accountService.ChangePassword(request));
+        }
     }
 }

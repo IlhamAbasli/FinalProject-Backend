@@ -259,5 +259,26 @@ namespace Service.Services
 
             await _userManager.ResetPasswordAsync(existUser, decodedToken, model.NewPassword);
         }
+
+        public async Task<ChangePasswordResponse> ChangePassword(ChangePasswordDto model)
+        {
+            var existUser = await _userManager.FindByIdAsync(model.UserId);
+            var existPassword = await _userManager.CheckPasswordAsync(existUser, model.NewPassword);
+            var checkOldPassword = await _userManager.CheckPasswordAsync(existUser,model.OldPassword);
+
+            if (!checkOldPassword)
+            {
+                return new ChangePasswordResponse { Success = false, Message = "Old password is not correct" };
+
+            }
+
+            if (existPassword)
+            {
+                return new ChangePasswordResponse { Success = false, Message = "New password can`t be the same with old password" };
+
+            }
+            await _userManager.ChangePasswordAsync(existUser,model.OldPassword,model.NewPassword);
+            return new ChangePasswordResponse { Success = true, Message = "Password changed successfully" };
+        }
     }
 }
