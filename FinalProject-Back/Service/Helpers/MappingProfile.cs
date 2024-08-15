@@ -8,6 +8,7 @@ using Service.DTOs.Library;
 using Service.DTOs.News;
 using Service.DTOs.Platform;
 using Service.DTOs.Product;
+using Service.DTOs.Subscriber;
 using Service.DTOs.Type;
 using Service.DTOs.Wallet;
 using Service.DTOs.Wishlist;
@@ -57,6 +58,11 @@ namespace Service.Helpers
             CreateMap<AddWishlistDto,Wishlist>();
 
             CreateMap<AddBasketDto,Basket>();
+
+
+            CreateMap<SubscriberCreateDto,Subscriber>();
+            CreateMap<Subscriber,SubscriberDto>();
+
         }
 
     }

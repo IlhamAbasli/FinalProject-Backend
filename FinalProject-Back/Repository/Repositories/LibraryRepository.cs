@@ -36,9 +36,9 @@ namespace Repository.Repositories
                 case "All":
                     return paginatedDatas;
                 case "Alphabetical A-Z":
-                    return await _entities.Where(m => m.UserId == userId).Include(m => m.Product).ThenInclude(m => m.ProductImages).OrderByDescending(m => m.Product.ProductName).Skip((page - 1) * take).Take(take).ToListAsync();
-                case "Alphabetical Z-A":
                     return await _entities.Where(m => m.UserId == userId).Include(m => m.Product).ThenInclude(m => m.ProductImages).OrderBy(m => m.Product.ProductName).Skip((page - 1) * take).Take(take).ToListAsync();
+                case "Alphabetical Z-A":
+                    return await _entities.Where(m => m.UserId == userId).Include(m => m.Product).ThenInclude(m => m.ProductImages).OrderByDescending(m => m.Product.ProductName).Skip((page - 1) * take).Take(take).ToListAsync();
                 default:
                     break;
             }

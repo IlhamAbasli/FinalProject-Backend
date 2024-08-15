@@ -27,6 +27,7 @@ namespace Service
             services.AddScoped<IWalletService, WalletService>();
             services.AddScoped<IWishlishtService, WishlistService>();
             services.AddScoped<IBasketService, BasketService>();
+            services.AddScoped<ISubscriberService, SubscriberService>();
 
             return services;
         }

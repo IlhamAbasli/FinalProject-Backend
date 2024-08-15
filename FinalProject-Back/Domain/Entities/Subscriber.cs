@@ -9,6 +9,7 @@ namespace Domain.Entities
 {
     public class Subscriber : BaseEntity
     {
-        public string SubscriberEmail { get; set; }
+        public string UserId { get; set; }
+        public AppUser User { get; set; }
     }
 }

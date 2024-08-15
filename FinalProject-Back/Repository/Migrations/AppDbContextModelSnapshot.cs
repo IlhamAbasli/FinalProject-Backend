@@ -466,10 +466,12 @@ namespace Repository.Migrations
                     b.Property<bool>("SoftDeleted")
                         .HasColumnType("bit");
 
-                    b.Property<string>("SubscriberEmail")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Subscribers");
                 });
@@ -832,6 +834,15 @@ namespace Repository.Migrations
                     b.Navigation("Product");
                 });
 
+            modelBuilder.Entity("Domain.Entities.Subscriber", b =>
+                {
+                    b.HasOne("Domain.Entities.AppUser", "User")
+                        .WithMany("Subscribers")
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Domain.Entities.SystemRequirement", b =>
                 {
                     b.HasOne("Domain.Entities.Product", "Product")
@@ -925,6 +936,8 @@ namespace Repository.Migrations
                     b.Navigation("Comments");
 
                     b.Navigation("Libraries");
+
+                    b.Navigation("Subscribers");
 
                     b.Navigation("Wallets");
 
