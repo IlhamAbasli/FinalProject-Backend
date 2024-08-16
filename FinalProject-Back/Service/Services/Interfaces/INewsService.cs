@@ -21,6 +21,7 @@ namespace Service.Services.Interfaces
         Task<List<NewsDetailDto>> GetAllPaginatedNews(int page, int take = 5);
         Task DeleteImage(int imageId, int newsId);
         Task ChangeMainImage(int newsId,int imageId);
+        Task<List<NewsDetailDto>> GetLatestNews();
 
         Task<int> GetCount();
 

@@ -89,12 +89,20 @@
       "PackagePath": "staticwebassets\\assets\\images\\4e298bd3-e97f-4b68-b01d-82a4695db2ed-BFVbanner3.jpg"
     },
     {
+      "Id": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\59b30a3c-3c51-4e61-a959-1dd1cf79430d-NewsMain1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\59b30a3c-3c51-4e61-a959-1dd1cf79430d-NewsMain1.jpg"
+    },
+    {
       "Id": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\5b5ce377-6388-4727-a6d2-e66dbe1a0c66-AssasinsMain.avif",
       "PackagePath": "staticwebassets\\assets\\images\\5b5ce377-6388-4727-a6d2-e66dbe1a0c66-AssasinsMain.avif"
     },
     {
       "Id": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\5f0291e0-457f-4eaf-b4be-5a7d6960757f-HouseFlipperBanner4.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\5f0291e0-457f-4eaf-b4be-5a7d6960757f-HouseFlipperBanner4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\62de56ba-7d8e-4df7-9fb0-fe515d342045-HogwartsBanner1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\62de56ba-7d8e-4df7-9fb0-fe515d342045-HogwartsBanner1.jpg"
     },
     {
       "Id": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\62e31b15-1aea-488c-a7e4-b3be40887107-B4Bbanner1.jpg",
@@ -109,6 +117,10 @@
       "PackagePath": "staticwebassets\\assets\\images\\6d359f33-5d8b-455c-9bd7-c2f705f09ddb-SpongeBobLogo.avif"
     },
     {
+      "Id": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\7471ca25-3053-432b-86f6-51df81e1a683-NewsContent1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\7471ca25-3053-432b-86f6-51df81e1a683-NewsContent1.jpg"
+    },
+    {
       "Id": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\779006b2-809b-4bad-a329-c90b21638809-SinperElitebanner2.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\779006b2-809b-4bad-a329-c90b21638809-SinperElitebanner2.jpg"
     },
@@ -119,6 +131,10 @@
     {
       "Id": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\7cb4f8dd-cb20-401b-a9b6-08ae961e1ff5-AlanWakeBanner1.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\7cb4f8dd-cb20-401b-a9b6-08ae961e1ff5-AlanWakeBanner1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\837e734a-3fd3-4ce9-96d3-5d77eaa9d76d-HogwartsLogo.avif",
+      "PackagePath": "staticwebassets\\assets\\images\\837e734a-3fd3-4ce9-96d3-5d77eaa9d76d-HogwartsLogo.avif"
     },
     {
       "Id": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\845b9ebb-8aae-4fe6-9a3a-bc651714b2a1-FarCry6Banner1.png",
@@ -205,12 +221,20 @@
       "PackagePath": "staticwebassets\\assets\\images\\b0850679-b597-4b97-b881-4336bfdf43f8-HouseFlipperBanner3.jpg"
     },
     {
+      "Id": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\b359f7c0-6e09-4c37-8b61-c9c61d5c8969-HogwartsMain.avif",
+      "PackagePath": "staticwebassets\\assets\\images\\b359f7c0-6e09-4c37-8b61-c9c61d5c8969-HogwartsMain.avif"
+    },
+    {
       "Id": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\b5697eb4-1b3b-4216-817b-95e5a8b88228-FarCry6Logo.avif",
       "PackagePath": "staticwebassets\\assets\\images\\b5697eb4-1b3b-4216-817b-95e5a8b88228-FarCry6Logo.avif"
     },
     {
       "Id": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\b60f27f2-1f22-4364-8b15-64494f1edce4-horizon2.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\b60f27f2-1f22-4364-8b15-64494f1edce4-horizon2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\b68f6ef7-8a9b-455b-a797-f0ea8e339db4-HogwartsBanner3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\b68f6ef7-8a9b-455b-a797-f0ea8e339db4-HogwartsBanner3.jpg"
     },
     {
       "Id": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\bb48466c-edde-4842-9ceb-4c582703fb02-B4BLogo.avif",
@@ -263,6 +287,10 @@
     {
       "Id": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\d948d125-0599-433f-9005-78c45e4e1787-AlanWakeMain.jpeg",
       "PackagePath": "staticwebassets\\assets\\images\\d948d125-0599-433f-9005-78c45e4e1787-AlanWakeMain.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\dd0e166f-dc25-4b1c-88a4-70433a38f711-HogwartsBanner2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\dd0e166f-dc25-4b1c-88a4-70433a38f711-HogwartsBanner2.jpg"
     },
     {
       "Id": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\dd45bd54-cb36-4526-946f-5d017a029ab8-B4Bbanner2.jpg",

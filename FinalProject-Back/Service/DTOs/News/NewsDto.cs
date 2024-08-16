@@ -10,5 +10,6 @@ namespace Service.DTOs.News
     {
         public int Id { get; set; } 
         public string NewsTitle { get; set; }
+        public string NewsContent1 {  get; set; }
     }
 }

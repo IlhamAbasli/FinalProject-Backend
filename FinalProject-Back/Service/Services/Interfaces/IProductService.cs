@@ -23,5 +23,10 @@ namespace Service.Services.Interfaces
         Task<List<ProductDto>> GetAllPaginatedProducts(int page, string sortType, int take = 12);
         Task<int> GetCount();
         Task BuyProducts(List<Basket> basket);
+        Task<List<SliderProductDto>> GetSliderProducts();
+        Task<List<ProductDto>> GetLatestProducts();
+        Task<List<ProductDto>> GetTopSellers();
+        Task<List<ProductDto>> GetEditorsChoices();
+        Task<List<ProductDto>> GetTrending();
     }
 }

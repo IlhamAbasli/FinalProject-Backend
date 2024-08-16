@@ -43,5 +43,10 @@ namespace Repository.Repositories
         {
             return await _entities.CountAsync();
         }
+
+        public async Task<List<News>> GetLatestNews()
+        {
+            return await _entities.Include(m => m.NewsImages).OrderByDescending(m => m.Id).Take(2).ToListAsync();
+        }
     }
 }

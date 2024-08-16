@@ -27,16 +27,19 @@ namespace Service.Services
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly IMapper _mapper;
         private readonly JWTSettings _jwtSettings;
+        private readonly IEmailService _emailService;
 
         public AccountService(UserManager<AppUser> userManager,
                               IMapper mapper,
                               RoleManager<IdentityRole> roleManager,
-                              IOptions<JWTSettings> jwtSettings)
+                              IOptions<JWTSettings> jwtSettings,
+                              IEmailService emailService)
         {
             _userManager = userManager;
             _mapper = mapper;
             _roleManager = roleManager;
             _jwtSettings = jwtSettings.Value;
+            _emailService = emailService;
         }
 
         public async Task CreateRoles()
@@ -88,8 +91,7 @@ namespace Service.Services
             html = html.Replace("{link}", url);
             html = html.Replace("{Username}", $"{user.Firstname} {user.Lastname}");
             string subject = "Email confirmation";
-
-            SendMail(user.Email, subject, html);
+            _emailService.SendMail(user.Email, subject, html);
 
 
             return new RegisterResponse { Success = true, Errors = null };
@@ -102,22 +104,22 @@ namespace Service.Services
             await _userManager.ConfirmEmailAsync(user, decodedToken);
         }
 
-        public void SendMail(string to, string subject, string html, string from = null)
-        {
-            // create email message
-            var email = new MimeMessage();
-            email.From.Add(MailboxAddress.Parse("ilhamra@code.edu.az"));
-            email.To.Add(MailboxAddress.Parse(to));
-            email.Subject = subject;
-            email.Body = new TextPart(TextFormat.Html) { Text = html };
+        //public void SendMail(string to, string subject, string html, string from = null)
+        //{
+        //    // create email message
+        //    var email = new MimeMessage();
+        //    email.From.Add(MailboxAddress.Parse("ilhamra@code.edu.az"));
+        //    email.To.Add(MailboxAddress.Parse(to));
+        //    email.Subject = subject;
+        //    email.Body = new TextPart(TextFormat.Html) { Text = html };
 
-            // send email
-            using var smtp = new SmtpClient();
-            smtp.Connect("smtp.gmail.com", 587, SecureSocketOptions.StartTls);
-            smtp.Authenticate("ilhamra@code.edu.az", "vtiw pogc prau vewp");
-            smtp.Send(email);
-            smtp.Disconnect(true);
-        }
+        //    // send email
+        //    using var smtp = new SmtpClient();
+        //    smtp.Connect("smtp.gmail.com", 587, SecureSocketOptions.StartTls);
+        //    smtp.Authenticate("ilhamra@code.edu.az", "vtiw pogc prau vewp");
+        //    smtp.Send(email);
+        //    smtp.Disconnect(true);
+        //}
 
         private string GenerateEmailConfirmationLink(string userId, string token)
         {
@@ -242,9 +244,9 @@ namespace Service.Services
             html = html.Replace("{Username}", $"{existUser.Firstname} {existUser.Lastname}");
             string subject = "Verify to reset your password";
 
-            SendMail(existUser.Email, subject, html);
+            _emailService.SendMail(existUser.Email, subject, html);
 
-            return new ForgetPasswordResponse { Success = true, Message = "Check your email" };
+            return new ForgetPasswordResponse { Success = true, Message = "Confirmation email sent, please check your email" };
         }
 
         public async Task ResetPassword(ResetPasswordDto model)

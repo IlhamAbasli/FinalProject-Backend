@@ -54,6 +54,7 @@ builder.Services.Configure<IdentityOptions>(opt =>
 });
 
 builder.Services.Configure<JWTSettings>(builder.Configuration.GetSection("JWTSettings"));
+builder.Services.Configure<AppSettings>(builder.Configuration.GetSection("Smtp"));
 
 JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear(); // => remove default claims
 builder.Services

@@ -15,6 +15,7 @@ namespace Repository.Repositories.Interfaces
 
         Task DeleteImage(NewsImage image);
         Task ChangeMainImage(int newsId,int imageId);
+        Task<List<News>> GetLatestNews();
 
     }
 }

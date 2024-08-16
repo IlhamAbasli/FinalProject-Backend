@@ -233,5 +233,35 @@ namespace FinalProject_Back.Controllers
             var model = new ProductsPageDto { Products = paginatedDatas, PageCount = pageCount };
             return Ok(model);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> GetSliderProducts()
+        {
+            return Ok(await _productService.GetSliderProducts());
+        }
+        [HttpGet]
+        public async Task<IActionResult> GetLatestProducts()
+        {
+            return Ok(await _productService.GetLatestProducts());
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetTopSellers()
+        {
+            return Ok(await _productService.GetTopSellers());
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetTrending()
+        {
+            return Ok(await _productService.GetTrending());
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetEditorsChoices()
+        {
+            return Ok(await _productService.GetEditorsChoices());
+        }
     }
+
 }

@@ -45,6 +45,7 @@ namespace Service.Helpers
             CreateMap<PlatformEditDto, Platform>();
 
             CreateMap<Product,ProductDto>();
+            CreateMap<Product,SliderProductDto>();
             CreateMap<Product, ProductDetailDto>();
             CreateMap<ProductEditDto,Product>();
 

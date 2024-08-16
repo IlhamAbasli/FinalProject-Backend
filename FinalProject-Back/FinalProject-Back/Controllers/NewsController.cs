@@ -131,5 +131,12 @@ namespace FinalProject_Back.Controllers
             await _newsService.ChangeMainImage((int)newsId,(int)imageId);
             return Ok();
         }
+
+
+        [HttpGet]
+        public async Task<IActionResult> GetLatestNews()
+        {
+            return Ok(await _newsService.GetLatestNews());
+        }
     }
 }

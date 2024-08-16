@@ -128,5 +128,35 @@ namespace Service.Services
         {
             await _productRepo.BuyProducts(basket);
         }
+
+        public async Task<List<SliderProductDto>> GetSliderProducts()
+        {
+            var products = await _productRepo.GetSliderProducts();
+            return _mapper.Map<List<SliderProductDto>> (products);
+        }
+
+        public async Task<List<ProductDto>> GetLatestProducts()
+        {
+            var products = await _productRepo.GetLatestProducts();
+            return _mapper.Map<List<ProductDto>>(products);
+        }
+
+        public async Task<List<ProductDto>> GetTopSellers()
+        {
+            var products = await _productRepo.GetTopSellers();
+            return _mapper.Map<List<ProductDto>>(products);
+        }
+
+        public async Task<List<ProductDto>> GetTrending()
+        {
+            var products = await _productRepo.GetTrending();
+            return _mapper.Map<List<ProductDto>>(products) ;
+        }
+
+        public async Task<List<ProductDto>> GetEditorsChoices()
+        {
+            var products = await _productRepo.GetEditorsChoices();
+            return _mapper.Map<List<ProductDto>>(products);
+        }
     }
 }

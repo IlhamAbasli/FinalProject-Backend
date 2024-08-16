@@ -29,6 +29,8 @@ namespace Service
             services.AddScoped<IBasketService, BasketService>();
             services.AddScoped<ISubscriberService, SubscriberService>();
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IEmailService, EmailService>();
+            
 
             return services;
         }

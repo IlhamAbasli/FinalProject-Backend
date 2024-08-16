@@ -97,5 +97,11 @@ namespace Service.Services
         {
             await _newsRepo.ChangeMainImage(newsId, imageId);
         }
+
+        public async Task<List<NewsDetailDto>> GetLatestNews()
+        {
+            var news = await _newsRepo.GetLatestNews();
+            return _mapper.Map<List<NewsDetailDto>>(news);
+        }
     }
 }
