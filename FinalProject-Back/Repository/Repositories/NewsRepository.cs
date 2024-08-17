@@ -36,7 +36,7 @@ namespace Repository.Repositories
 
         public async Task<List<News>> GetAllPaginatedNews(int page, int take = 5)
         {
-            return await _entities.Include(m=>m.NewsImages).Skip((page - 1) * take).Take(take).ToListAsync();
+            return await _entities.Include(m=>m.NewsImages).OrderByDescending(m=>m.Id).Skip((page - 1) * take).Take(take).ToListAsync();
         }
 
         public async Task<int> GetCount()

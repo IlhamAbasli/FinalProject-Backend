@@ -104,23 +104,6 @@ namespace Service.Services
             await _userManager.ConfirmEmailAsync(user, decodedToken);
         }
 
-        //public void SendMail(string to, string subject, string html, string from = null)
-        //{
-        //    // create email message
-        //    var email = new MimeMessage();
-        //    email.From.Add(MailboxAddress.Parse("ilhamra@code.edu.az"));
-        //    email.To.Add(MailboxAddress.Parse(to));
-        //    email.Subject = subject;
-        //    email.Body = new TextPart(TextFormat.Html) { Text = html };
-
-        //    // send email
-        //    using var smtp = new SmtpClient();
-        //    smtp.Connect("smtp.gmail.com", 587, SecureSocketOptions.StartTls);
-        //    smtp.Authenticate("ilhamra@code.edu.az", "vtiw pogc prau vewp");
-        //    smtp.Send(email);
-        //    smtp.Disconnect(true);
-        //}
-
         private string GenerateEmailConfirmationLink(string userId, string token)
         {
             var uriBuilder = new UriBuilder("http://localhost:5173/emailconfirmation");
@@ -210,10 +193,38 @@ namespace Service.Services
         public async Task UpdateUser(string userId, UserUpdateDto model)
         {
             var existUsername = await _userManager.FindByNameAsync(model.Username);
+            var existEmail = await _userManager.FindByEmailAsync(model.Email);
             var user = await _userManager.FindByIdAsync(userId);
             if (existUsername is not null && user.UserName != existUsername.UserName)
             {
                 throw new BadRequestException("This username has already exist");
+            }
+
+            if(existEmail is not null && user.Email != existEmail.Email)
+            {
+                throw new BadRequestException("This email has already exist");
+            }
+
+
+            if (user.Email != model.Email)
+            {
+                user.Email = model.Email;
+                user.EmailConfirmed = false;
+                string token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+
+                string url = GenerateEmailConfirmationLink(user.Id, token);
+                string html = string.Empty;
+
+                using (StreamReader reader = new("wwwroot/templates/emailconfirmation.html"))
+                {
+                    html = await reader.ReadToEndAsync();
+                }
+
+                html = html.Replace("{link}", url);
+                html = html.Replace("{Username}", $"{user.Firstname} {user.Lastname}");
+                string subject = "Email confirmation";
+                _emailService.SendMail(model.Email, subject, html);
+
             }
             user.UserName = model.Username;
             user.Firstname = model.Firstname;
