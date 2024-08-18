@@ -224,10 +224,10 @@ namespace FinalProject_Back.Controllers
 
 
         [HttpGet]
-        public async Task<IActionResult> GetAllPaginated([FromQuery] string sortType,[FromQuery] int page = 1)
+        public async Task<IActionResult> GetAllPaginated([FromQuery] string sortType, [FromQuery] string searchText,[FromQuery] int page = 1)
         {
-            var paginatedDatas = await _productService.GetAllPaginatedProducts(page,sortType);
-            var productsCount = await _productService.GetCount();
+            var paginatedDatas = await _productService.GetAllPaginatedProducts(page,sortType,searchText);
+            var productsCount = (searchText == null ? await _productService.GetCount() : await _productService.GetSearchedCount(searchText));
             var pageCount = _productService.GetProductsPageCount(productsCount, 12);
 
             var model = new ProductsPageDto { Products = paginatedDatas, PageCount = pageCount };

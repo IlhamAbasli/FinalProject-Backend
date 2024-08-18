@@ -15,13 +15,14 @@ namespace Repository.Repositories.Interfaces
         Task DeleteImage(ProductImage image);
         Task ChangeMainImage(int productId, int imageId);
         Task<Product> GetByRedeemCode(string redeemCode);
-        Task<List<Product>> GetAllPaginatedProducts(int page,string sortType, int take = 12);
+        Task<List<Product>> GetAllPaginatedProducts(int page,string sortType,string searchText, int take = 12);
         Task<List<Product>> GetSliderProducts();
         Task<List<Product>> GetLatestProducts();
         Task<List<Product>> GetTopSellers();
         Task<List<Product>> GetTrending();
         Task<List<Product>> GetEditorsChoices();
         Task<int> GetCount();
+        Task<int> GetSearchedCount(string searchText);
         Task BuyProducts(List<Basket> basket);
     }
 }

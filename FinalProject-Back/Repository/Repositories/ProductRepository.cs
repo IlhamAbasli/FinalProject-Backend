@@ -36,6 +36,7 @@ namespace Repository.Repositories
         {
             return await _entities.Include(m => m.ProductType)
                                   .Include(m => m.ProductImages)
+                                  .OrderByDescending(m=>m.Id)
                                   .ToListAsync();
         }
 
@@ -58,33 +59,72 @@ namespace Repository.Repositories
             return existData;
         }
 
-        public async Task<List<Product>> GetAllPaginatedProducts(int page, string sortType, int take = 12)
+        public async Task<List<Product>> GetAllPaginatedProducts(int page, string sortType,string searchText, int take = 12)
         {
             var paginatedDatas = await _entities.Include(m => m.ProductImages).Include(m => m.ProductType).Skip((page - 1) * take).Take(take).ToListAsync();
             switch (sortType)
             {
                 case "New Release":
-                    return await _entities.Include(m => m.ProductImages)
+                    paginatedDatas = await _entities.Include(m => m.ProductImages)
                                           .Include(m => m.ProductType)
                                           .OrderByDescending(m => m.Id)
                                           .Skip((page - 1) * take).Take(take)
                                           .ToListAsync();
+                    break;
                 case "All":
-                    return paginatedDatas;
+                    break;
                 case "Price: High to Low":
-                    return await _entities.Include(m => m.ProductImages)
+                    paginatedDatas = await _entities.Include(m => m.ProductImages)
                                           .Include(m => m.ProductType)
                                           .OrderByDescending(m => m.ProductPrice)
                                           .Skip((page - 1) * take).Take(take)
                                           .ToListAsync();
+                    break;
                 case "Price: Low to High":
-                    return await _entities.Include(m => m.ProductImages)
+                    paginatedDatas = await _entities.Include(m => m.ProductImages)
                                           .Include(m => m.ProductType)
                                           .OrderBy(m => m.ProductPrice)
                                           .Skip((page - 1) * take).Take(take)
                                           .ToListAsync();
+                    break;
                 default:
                     break;
+            }
+
+            if(searchText is not null)
+            {
+                paginatedDatas = await _entities.Include(m => m.ProductImages).Include(m => m.ProductType).Where(m=>m.ProductName.ToLower().Contains(searchText.ToLower().Trim())).Skip((page - 1) * take).Take(take).ToListAsync();
+                switch (sortType)
+                {
+                    case "New Release":
+                        paginatedDatas = await _entities.Include(m => m.ProductImages)
+                                                        .Where(m => m.ProductName.ToLower().Contains(searchText.ToLower().Trim()))
+                                                        .Include(m => m.ProductType)
+                                                        .OrderByDescending(m => m.Id)
+                                                        .Skip((page - 1) * take).Take(take)
+                                                        .ToListAsync();
+                        break;
+                    case "All":
+                        break;
+                    case "Price: High to Low":
+                        paginatedDatas = await _entities.Include(m => m.ProductImages)
+                                                        .Where(m => m.ProductName.ToLower().Contains(searchText.ToLower().Trim()))
+                                                        .Include(m => m.ProductType)
+                                                        .OrderByDescending(m => m.ProductPrice)
+                                                        .Skip((page - 1) * take).Take(take)
+                                                        .ToListAsync();
+                        break;
+                    case "Price: Low to High":
+                        paginatedDatas = await _entities.Include(m => m.ProductImages)
+                                                        .Where(m => m.ProductName.ToLower().Contains(searchText.ToLower().Trim()))
+                                                        .Include(m => m.ProductType)
+                                                        .OrderBy(m => m.ProductPrice)
+                                                        .Skip((page - 1) * take).Take(take)
+                                                        .ToListAsync();
+                        break;
+                    default:
+                        break;
+                }
             }
 
             return paginatedDatas;
@@ -95,6 +135,13 @@ namespace Repository.Repositories
         {
             return await _entities.CountAsync();
         }
+
+        public async Task<int> GetSearchedCount(string searchText)
+        {
+            var datas = await _entities.Where(m => m.ProductName.ToLower().Contains(searchText.ToLower().Trim())).ToListAsync();
+            return datas.Count;
+        }
+
 
         public async Task BuyProducts(List<Basket> basket)
         {

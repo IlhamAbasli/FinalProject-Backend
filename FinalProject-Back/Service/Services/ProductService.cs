@@ -111,6 +111,10 @@ namespace Service.Services
         {
             return await _productRepo.GetCount();
         }
+        public async Task<int> GetSearchedCount(string searchText)
+        {
+            return await _productRepo.GetSearchedCount(searchText);
+        }
 
 
         public int GetProductsPageCount(int count, int take)
@@ -118,11 +122,12 @@ namespace Service.Services
             return (int)Math.Ceiling((decimal)count / take);
         }
 
-        public async Task<List<ProductDto>> GetAllPaginatedProducts(int page,string sortType, int take = 12)
+        public async Task<List<ProductDto>> GetAllPaginatedProducts(int page,string sortType,string searchText, int take = 12)
         {
-            var products = await _productRepo.GetAllPaginatedProducts(page, sortType, take);
+            var products = await _productRepo.GetAllPaginatedProducts(page, sortType, searchText ,take);
             return _mapper.Map<List<ProductDto>>(products);
         }
+
 
         public async Task BuyProducts(List<Basket> basket)
         {
