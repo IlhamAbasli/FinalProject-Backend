@@ -36,7 +36,7 @@ namespace Repository.Repositories
         {
             return await _entities.Include(m => m.ProductType)
                                   .Include(m => m.ProductImages)
-                                  .OrderByDescending(m=>m.Id)
+                                  .OrderByDescending(m => m.Id)
                                   .ToListAsync();
         }
 
@@ -59,77 +59,208 @@ namespace Repository.Repositories
             return existData;
         }
 
-        public async Task<List<Product>> GetAllPaginatedProducts(int page, string sortType,string searchText, int take = 12)
+        //public async Task<List<Product>> GetAllPaginatedProducts(int page, string sortType, string searchText, List<string> priceFilters, List<string> genreFilters, List<string> typeFilters, int take = 12)
+        //{
+        //    var paginatedDatas = await _entities.Include(m => m.ProductImages)
+        //                                        .Include(m => m.ProductType)
+        //                                        .Include(m=>m.Genre)
+        //                                        .Skip((page - 1) * take).Take(take).ToListAsync();
+
+
+        //    switch (sortType)
+        //    {
+        //        case "New Release":
+        //            paginatedDatas = await _entities.Include(m => m.ProductImages)
+        //                                  .Include(m => m.ProductType)
+        //                                  .OrderByDescending(m => m.Id)
+        //                                  .Skip((page - 1) * take).Take(take)
+        //                                  .ToListAsync();
+        //            break;
+        //        case "All":
+        //            break;
+        //        case "Price: High to Low":
+        //            paginatedDatas = await _entities.Include(m => m.ProductImages)
+        //                                  .Include(m => m.ProductType)
+        //                                  .OrderByDescending(m => m.ProductPrice)
+        //                                  .Skip((page - 1) * take).Take(take)
+        //                                  .ToListAsync();
+        //            break;
+        //        case "Price: Low to High":
+        //            paginatedDatas = await _entities.Include(m => m.ProductImages)
+        //                                  .Include(m => m.ProductType)
+        //                                  .OrderBy(m => m.ProductPrice)
+        //                                  .Skip((page - 1) * take).Take(take)
+        //                                  .ToListAsync();
+        //            break;
+        //        default:
+        //            break;
+        //    }
+
+        //    if (searchText is not null)
+        //    {
+        //        paginatedDatas = await _entities.Include(m => m.ProductImages).Include(m => m.ProductType).Where(m => m.ProductName.ToLower().Contains(searchText.ToLower().Trim())).Skip((page - 1) * take).Take(take).ToListAsync();
+        //        switch (sortType)
+        //        {
+        //            case "New Release":
+        //                paginatedDatas = await _entities.Include(m => m.ProductImages)
+        //                                                .Where(m => m.ProductName.ToLower().Contains(searchText.ToLower().Trim()))
+        //                                                .Include(m => m.ProductType)
+        //                                                .OrderByDescending(m => m.Id)
+        //                                                .Skip((page - 1) * take).Take(take)
+        //                                                .ToListAsync();
+        //                break;
+        //            case "All":
+        //                break;
+        //            case "Price: High to Low":
+        //                paginatedDatas = await _entities.Include(m => m.ProductImages)
+        //                                                .Where(m => m.ProductName.ToLower().Contains(searchText.ToLower().Trim()))
+        //                                                .Include(m => m.ProductType)
+        //                                                .OrderByDescending(m => m.ProductPrice)
+        //                                                .Skip((page - 1) * take).Take(take)
+        //                                                .ToListAsync();
+        //                break;
+        //            case "Price: Low to High":
+        //                paginatedDatas = await _entities.Include(m => m.ProductImages)
+        //                                                .Where(m => m.ProductName.ToLower().Contains(searchText.ToLower().Trim()))
+        //                                                .Include(m => m.ProductType)
+        //                                                .OrderBy(m => m.ProductPrice)
+        //                                                .Skip((page - 1) * take).Take(take)
+        //                                                .ToListAsync();
+        //                break;
+        //            default:
+        //                break;
+        //        }
+        //    }
+
+
+        //    if (genreFilters.FirstOrDefault() is not null)
+        //    {
+        //        paginatedDatas = await _entities.Include(m => m.ProductImages)
+        //                                      .Include(m => m.ProductType)
+        //                                      .Include(m => m.Genre)
+        //                                      .Where(m => genreFilters.Contains(m.Genre.GenreName))
+        //                                      .Skip((page - 1) * take).Take(take)
+        //                                      .ToListAsync();
+        //        switch (sortType)
+        //        {
+        //            case "New Release":
+        //                paginatedDatas = await _entities.Include(m => m.ProductImages)
+        //                                      .Include(m => m.ProductType)
+        //                                      .Include(m => m.Genre)
+        //                                      .Where(m => genreFilters.Contains(m.Genre.GenreName))
+        //                                      .OrderByDescending(m => m.Id)
+        //                                      .Skip((page - 1) * take).Take(take)
+        //                                      .ToListAsync();
+        //                break;
+        //            case "All":
+        //                break;
+        //            case "Price: High to Low":
+        //                paginatedDatas = await _entities.Include(m => m.ProductImages)
+        //                                      .Include(m => m.ProductType)
+        //                                      .Include(m => m.Genre)
+        //                                      .Where(m => genreFilters.Contains(m.Genre.GenreName))
+        //                                      .OrderByDescending(m => m.ProductPrice)
+        //                                      .Skip((page - 1) * take).Take(take)
+        //                                      .ToListAsync();
+        //                break;
+        //            case "Price: Low to High":
+        //                paginatedDatas = await _entities.Include(m => m.ProductImages)
+        //                                      .Include(m => m.ProductType)
+        //                                      .Include(m => m.Genre)
+        //                                      .Where(m => genreFilters.Contains(m.Genre.GenreName))
+        //                                      .OrderBy(m => m.ProductPrice)
+        //                                      .Skip((page - 1) * take).Take(take)
+        //                                      .ToListAsync();
+        //                break;
+        //            default:
+        //                break;
+        //        }
+        //    }
+
+        //    return paginatedDatas;
+
+        //}
+        public async Task<List<Product>> GetAllPaginatedProducts(int page, string sortType, string searchText, List<string> priceFilters, List<string> genreFilters, List<string> typeFilters, int take = 12)
         {
-            var paginatedDatas = await _entities.Include(m => m.ProductImages).Include(m => m.ProductType).Skip((page - 1) * take).Take(take).ToListAsync();
-            switch (sortType)
+            var query = _entities.Include(m => m.ProductImages)
+                                 .Include(m => m.ProductType)
+                                 .Include(m => m.Genre)
+                                 .AsQueryable();
+
+            // Apply search filter
+            if (!string.IsNullOrEmpty(searchText))
             {
-                case "New Release":
-                    paginatedDatas = await _entities.Include(m => m.ProductImages)
-                                          .Include(m => m.ProductType)
-                                          .OrderByDescending(m => m.Id)
-                                          .Skip((page - 1) * take).Take(take)
-                                          .ToListAsync();
-                    break;
-                case "All":
-                    break;
-                case "Price: High to Low":
-                    paginatedDatas = await _entities.Include(m => m.ProductImages)
-                                          .Include(m => m.ProductType)
-                                          .OrderByDescending(m => m.ProductPrice)
-                                          .Skip((page - 1) * take).Take(take)
-                                          .ToListAsync();
-                    break;
-                case "Price: Low to High":
-                    paginatedDatas = await _entities.Include(m => m.ProductImages)
-                                          .Include(m => m.ProductType)
-                                          .OrderBy(m => m.ProductPrice)
-                                          .Skip((page - 1) * take).Take(take)
-                                          .ToListAsync();
-                    break;
-                default:
-                    break;
+                query = query.Where(p => p.ProductName.ToLower().Contains(searchText.ToLower().Trim()));
             }
 
-            if(searchText is not null)
+            // Apply price filters
+            if (priceFilters is not null && priceFilters.Any())
             {
-                paginatedDatas = await _entities.Include(m => m.ProductImages).Include(m => m.ProductType).Where(m=>m.ProductName.ToLower().Contains(searchText.ToLower().Trim())).Skip((page - 1) * take).Take(take).ToListAsync();
-                switch (sortType)
+                foreach (var price in priceFilters)
                 {
-                    case "New Release":
-                        paginatedDatas = await _entities.Include(m => m.ProductImages)
-                                                        .Where(m => m.ProductName.ToLower().Contains(searchText.ToLower().Trim()))
-                                                        .Include(m => m.ProductType)
-                                                        .OrderByDescending(m => m.Id)
-                                                        .Skip((page - 1) * take).Take(take)
-                                                        .ToListAsync();
-                        break;
-                    case "All":
-                        break;
-                    case "Price: High to Low":
-                        paginatedDatas = await _entities.Include(m => m.ProductImages)
-                                                        .Where(m => m.ProductName.ToLower().Contains(searchText.ToLower().Trim()))
-                                                        .Include(m => m.ProductType)
-                                                        .OrderByDescending(m => m.ProductPrice)
-                                                        .Skip((page - 1) * take).Take(take)
-                                                        .ToListAsync();
-                        break;
-                    case "Price: Low to High":
-                        paginatedDatas = await _entities.Include(m => m.ProductImages)
-                                                        .Where(m => m.ProductName.ToLower().Contains(searchText.ToLower().Trim()))
-                                                        .Include(m => m.ProductType)
-                                                        .OrderBy(m => m.ProductPrice)
-                                                        .Skip((page - 1) * take).Take(take)
-                                                        .ToListAsync();
-                        break;
-                    default:
-                        break;
+                    switch (price)
+                    {
+                        case "Free":
+                            query = query.Where(p => p.ProductPrice == 0);
+                            break;
+                        case "Under $5.00":
+                            query = query.Where(p => p.ProductPrice < 5);
+                            break;
+                        case "Under $10.00":
+                            query = query.Where(p => p.ProductPrice < 10);
+                            break;
+                        case "Under $20.00":
+                            query = query.Where(p => p.ProductPrice < 20);
+                            break;
+                        case "Under $30.00":
+                            query = query.Where(p => p.ProductPrice < 30);
+                            break;
+                        case "$14.00 and above":
+                            query = query.Where(p => p.ProductPrice >= 14);
+                            break;
+                    }
                 }
             }
 
-            return paginatedDatas;
+            // Apply genre filters
+            if (genreFilters is not null && genreFilters.Any())
+            {
+                query = query.Where(m => genreFilters.Contains(m.Genre.GenreName));
+            }
 
+            // Apply type filters
+            if (typeFilters is not null && typeFilters.Any())
+            {
+                query = query.Where(m => typeFilters.Contains(m.ProductType.TypeName));
+            }
+
+            // Apply sorting
+            switch (sortType)
+            {
+                case "New Release":
+                    query = query.OrderByDescending(m => m.Id);
+                    break;
+                case "Price: High to Low":
+                    query = query.OrderByDescending(m => m.ProductPrice);
+                    break;
+                case "Price: Low to High":
+                    query = query.OrderBy(m => m.ProductPrice);
+                    break;
+                default:
+                    // Default sorting can be added here if needed
+                    break;
+            }
+
+            // Apply pagination
+            var paginatedDatas = await query.Skip((page - 1) * take)
+                                            .Take(take)
+                                            .ToListAsync();
+
+            return paginatedDatas;
         }
+
+
+
 
         public async Task<int> GetCount()
         {
