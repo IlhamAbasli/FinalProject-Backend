@@ -44,10 +44,10 @@ namespace Service.Services
             return (int)Math.Ceiling((decimal)count / take);
         }
 
-        public async Task<List<Library>> GetAllPaginatedProducts(int page,string userId, string sortType, int take = 8)
+        public async Task<LibraryPaginateDto> GetAllPaginatedProducts(int page,string userId, string sortType, string searchText, List<string> genreFilters, List<string> typeFilters, int take = 8)
         {
-            var products = await _libraryRepo.GetAllPaginatedProducts(page,userId,sortType ,take);
-            return products;
+            var products = await _libraryRepo.GetAllPaginatedProducts(page,userId,sortType,searchText,genreFilters,typeFilters ,take);
+            return new LibraryPaginateDto {Products = products.Products , DataCount = products.DataCount };
         }
 
         public async Task<int> GetCount(string userId)

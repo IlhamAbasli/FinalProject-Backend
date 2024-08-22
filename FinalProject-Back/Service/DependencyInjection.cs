@@ -30,6 +30,7 @@ namespace Service
             services.AddScoped<ISubscriberService, SubscriberService>();
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IEmailService, EmailService>();
+            services.AddScoped<ICommentService, CommentService>();
             
 
             return services;

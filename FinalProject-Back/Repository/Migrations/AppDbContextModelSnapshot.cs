@@ -161,6 +161,9 @@ namespace Repository.Migrations
                     b.Property<bool>("SoftDeleted")
                         .HasColumnType("bit");
 
+                    b.Property<string>("Subject")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("UserComment")
                         .HasColumnType("nvarchar(max)");
 

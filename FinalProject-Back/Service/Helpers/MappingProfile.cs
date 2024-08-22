@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Identity;
 using Service.DTOs.Account;
 using Service.DTOs.Ad;
 using Service.DTOs.Basket;
+using Service.DTOs.Comments;
 using Service.DTOs.Genre;
 using Service.DTOs.Library;
 using Service.DTOs.News;
@@ -68,6 +69,8 @@ namespace Service.Helpers
 
             CreateMap<AppUser, UsersDto>();
             CreateMap<IdentityRole,RolesDto>();
+
+            CreateMap<AddCommentDto, Comment>();
 
         }
 

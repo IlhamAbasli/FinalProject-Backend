@@ -26,13 +26,13 @@ namespace FinalProject_Back.Controllers
 
 
         [HttpGet]
-        public async Task<IActionResult> GetAllPaginated([FromQuery] string userId, [FromQuery] string sortType,[FromQuery] int page = 1)
+        public async Task<IActionResult> GetAllPaginated([FromQuery] string userId, [FromQuery] string sortType, [FromQuery] string searchText, [FromQuery] string[] genreFilters, [FromQuery] string[] typeFilters, [FromQuery] int page = 1)
         {
-            var paginatedDatas = await _libraryService.GetAllPaginatedProducts(page,userId,sortType);
+            var paginatedDatas = await _libraryService.GetAllPaginatedProducts(page,userId,sortType,searchText,genreFilters.ToList(),typeFilters.ToList());
             var productsCount = await _libraryService.GetCount(userId);
-            var pageCount = _libraryService.GetLibraryPageCount(productsCount, 8);
+            var pageCount = _libraryService.GetLibraryPageCount(paginatedDatas.DataCount, 8);
 
-            var model = new LibraryPageDto { LibraryProducts = paginatedDatas, PageCount = pageCount };
+            var model = new LibraryPageDto { LibraryProducts = paginatedDatas.Products, PageCount = pageCount };
             return Ok(model);
         }
 

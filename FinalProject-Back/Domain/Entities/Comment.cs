@@ -10,6 +10,7 @@ namespace Domain.Entities
     public class Comment : BaseEntity
     {
         public DateTime CreatedDate { get; set; } = DateTime.Now;
+        public string Subject { get; set; }
         public string UserComment { get; set; }
         public int ProductId { get; set; }
         public Product Product { get; set; }

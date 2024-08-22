@@ -1,6 +1,7 @@
 ﻿using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Repository.Data;
+using Repository.Helpers.DTOs;
 using Repository.Helpers.Exceptions;
 using Repository.Repositories.Inretfaces;
 using Repository.Repositories.Interfaces;
@@ -26,23 +27,54 @@ namespace Repository.Repositories
             return true;
         }
 
-        public async Task<List<Library>> GetAllPaginatedProducts(int page,string userId, string sortType, int take = 8)
+        public async Task<LibraryPaginateDto> GetAllPaginatedProducts(int page,string userId, string sortType, string searchText, List<string> genreFilters, List<string> typeFilters, int take = 8)
         {
-            var paginatedDatas = await _entities.Where(m => m.UserId == userId).Include(m => m.Product).ThenInclude(m => m.ProductImages).Skip((page - 1) * take).Take(take).ToListAsync();
+            var query = _entities.Where(m => m.UserId == userId)
+                                 .Include(m => m.Product)
+                                 .ThenInclude(m => m.ProductImages)
+                                 .Include(m=>m.Product)
+                                 .ThenInclude(m=>m.Genre)
+                                 .Include(m => m.Product)
+                                 .ThenInclude(m => m.ProductType).AsQueryable();
+
+            if (!string.IsNullOrEmpty(searchText))
+            {
+                query = query.Where(p => p.Product.ProductName.ToLower().Contains(searchText.ToLower().Trim()));
+            }
+
+
+            if (genreFilters is not null && genreFilters.Any())
+            {
+                query = query.Where(m => genreFilters.Contains(m.Product.Genre.GenreName));
+            }
+
+            if (typeFilters is not null && typeFilters.Any())
+            {
+                query = query.Where(m => typeFilters.Contains(m.Product.ProductType.TypeName));
+            }
+
             switch (sortType)
             {
                 case "Recently Purchased":
-                    return await _entities.Where(m => m.UserId == userId).Include(m => m.Product).ThenInclude(m => m.ProductImages).OrderByDescending(m => m.Id).Skip((page - 1) * take).Take(take).ToListAsync();
-                case "All":
-                    return paginatedDatas;
-                case "Alphabetical A-Z":
-                    return await _entities.Where(m => m.UserId == userId).Include(m => m.Product).ThenInclude(m => m.ProductImages).OrderBy(m => m.Product.ProductName).Skip((page - 1) * take).Take(take).ToListAsync();
+                    query = query.OrderByDescending(m => m.Id);
+                    break;
                 case "Alphabetical Z-A":
-                    return await _entities.Where(m => m.UserId == userId).Include(m => m.Product).ThenInclude(m => m.ProductImages).OrderByDescending(m => m.Product.ProductName).Skip((page - 1) * take).Take(take).ToListAsync();
+                    query = query.OrderByDescending(m => m.Product.ProductName);
+                    break;
+                case "Alphabetical A-Z":
+                    query = query.OrderBy(m => m.Product.ProductName);
+                    break;
                 default:
                     break;
             }
-            return paginatedDatas;
+
+            int productCount = query.Count();
+
+            var paginatedDatas = await query.Skip((page - 1) * take)
+                                            .Take(take)
+                                            .ToListAsync();
+
+            return new LibraryPaginateDto { Products = paginatedDatas, DataCount = productCount };
         }
 
         public async Task<int> GetCount(string userId)

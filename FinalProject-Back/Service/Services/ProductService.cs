@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Domain.Entities;
+using Repository.Helpers.DTOs;
 using Repository.Helpers.Exceptions;
 using Repository.Repositories.Interfaces;
 using Service.DTOs.News;
@@ -122,10 +123,12 @@ namespace Service.Services
             return (int)Math.Ceiling((decimal)count / take);
         }
 
-        public async Task<List<ProductDto>> GetAllPaginatedProducts(int page, string sortType, string searchText, List<string> priceFilters, List<string> genreFilters, List<string> typeFilters, int take = 12)
+        public async Task<ProductPaginateDto> GetAllPaginatedProducts(int page, string sortType, string searchText, List<string> priceFilters, List<string> genreFilters, List<string> typeFilters, int take = 12)
         {
-            var products = await _productRepo.GetAllPaginatedProducts(page, sortType, searchText,priceFilters,genreFilters,typeFilters ,take);
-            return _mapper.Map<List<ProductDto>>(products);
+            var datas = await _productRepo.GetAllPaginatedProducts(page, sortType, searchText,priceFilters,genreFilters,typeFilters ,take);
+            var products = _mapper.Map<List<ProductDto>>(datas.Products);
+            var dataCount = datas.DataCount;
+            return new ProductPaginateDto { Products = products, DataCount = dataCount };
         }
 
 

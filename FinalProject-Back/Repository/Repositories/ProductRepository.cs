@@ -1,6 +1,7 @@
 ﻿using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Repository.Data;
+using Repository.Helpers.DTOs;
 using Repository.Repositories.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -180,20 +181,18 @@ namespace Repository.Repositories
         //    return paginatedDatas;
 
         //}
-        public async Task<List<Product>> GetAllPaginatedProducts(int page, string sortType, string searchText, List<string> priceFilters, List<string> genreFilters, List<string> typeFilters, int take = 12)
+        public async Task<PaginateDto> GetAllPaginatedProducts(int page, string sortType, string searchText, List<string> priceFilters, List<string> genreFilters, List<string> typeFilters, int take = 12)
         {
             var query = _entities.Include(m => m.ProductImages)
                                  .Include(m => m.ProductType)
                                  .Include(m => m.Genre)
                                  .AsQueryable();
 
-            // Apply search filter
             if (!string.IsNullOrEmpty(searchText))
             {
                 query = query.Where(p => p.ProductName.ToLower().Contains(searchText.ToLower().Trim()));
             }
 
-            // Apply price filters
             if (priceFilters is not null && priceFilters.Any())
             {
                 foreach (var price in priceFilters)
@@ -222,19 +221,16 @@ namespace Repository.Repositories
                 }
             }
 
-            // Apply genre filters
             if (genreFilters is not null && genreFilters.Any())
             {
                 query = query.Where(m => genreFilters.Contains(m.Genre.GenreName));
             }
 
-            // Apply type filters
             if (typeFilters is not null && typeFilters.Any())
             {
                 query = query.Where(m => typeFilters.Contains(m.ProductType.TypeName));
             }
 
-            // Apply sorting
             switch (sortType)
             {
                 case "New Release":
@@ -247,16 +243,16 @@ namespace Repository.Repositories
                     query = query.OrderBy(m => m.ProductPrice);
                     break;
                 default:
-                    // Default sorting can be added here if needed
                     break;
             }
 
-            // Apply pagination
+            int productCount = query.Count();
+
             var paginatedDatas = await query.Skip((page - 1) * take)
                                             .Take(take)
                                             .ToListAsync();
 
-            return paginatedDatas;
+            return new PaginateDto { Products = paginatedDatas, DataCount = productCount };
         }
 
 
@@ -281,10 +277,6 @@ namespace Repository.Repositories
                 var product = await _entities.FirstOrDefaultAsync(m => m.Id == item.ProductId);
                 product.Count -= 1;
                 product.SellingCount += 1;
-                if (product.Count == 0)
-                {
-                    await Delete(product);
-                }
             }
             await _context.SaveChangesAsync();
         }

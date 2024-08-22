@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rX+jueifrifP8MynrFknZ53UjzzO2ab2sLrfG+Ty8JE=",
+  "Hash": "nUxtxfI3/iC4fczygYUNrnSc/dIuc2TyfanR2GkllQs=",
   "Source": "FinalProject-Back",
   "BasePath": "_content/FinalProject-Back",
   "Mode": "Default",
@@ -224,25 +224,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\25d1754f-3628-49ab-929f-c9c6ce0e0bc9-1b5cd9ab-a7d1-4b82-b1d5-33c54de4ac5e-AlanWakeBanner2.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\29aa0d71-e683-4014-834d-51858e3570f6-GTAV-logo.avif",
-      "SourceId": "FinalProject-Back",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\",
-      "BasePath": "_content/FinalProject-Back",
-      "RelativePath": "assets/images/29aa0d71-e683-4014-834d-51858e3570f6-GTAV-logo.avif",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\images\\29aa0d71-e683-4014-834d-51858e3570f6-GTAV-logo.avif"
     },
     {
       "Identity": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\2a09aaae-d893-4c53-a851-8fd78aed5610-gtav.avif",
@@ -908,6 +889,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\8c34282e-3a34-447c-8ce1-a52d64d0b1cb-BFVbanner1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\8d8f887f-9af9-4a69-aea3-03df3acf5e80-GTAV-logo.avif",
+      "SourceId": "FinalProject-Back",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\",
+      "BasePath": "_content/FinalProject-Back",
+      "RelativePath": "assets/images/8d8f887f-9af9-4a69-aea3-03df3acf5e80-GTAV-logo.avif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\8d8f887f-9af9-4a69-aea3-03df3acf5e80-GTAV-logo.avif"
     },
     {
       "Identity": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\8dd009b8-54e3-4e69-9cff-5e1801f207e5-Windows.svg",
@@ -1592,6 +1592,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\dd45bd54-cb36-4526-946f-5d017a029ab8-B4Bbanner2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\dfcbbc84-232e-4112-bce5-c041cc87ad1d-newsBanner2.jpg",
+      "SourceId": "FinalProject-Back",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\",
+      "BasePath": "_content/FinalProject-Back",
+      "RelativePath": "assets/images/dfcbbc84-232e-4112-bce5-c041cc87ad1d-newsBanner2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\dfcbbc84-232e-4112-bce5-c041cc87ad1d-newsBanner2.jpg"
     },
     {
       "Identity": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\wwwroot\\assets\\images\\dfeb7aa2-847f-4d1b-8286-496c19305187-NewsContent2.png",

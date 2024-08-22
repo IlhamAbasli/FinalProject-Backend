@@ -3,24 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D9CFDC41-21E2-447D-9DD7-2D44CF329B9E}|Repository\\Repository.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\repository\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9CFDC41-21E2-447D-9DD7-2D44CF329B9E}|Repository\\Repository.csproj|solutionrelative:repository\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F44D7AF2-169B-4F75-813E-1F6CDB32D18E}|FinalProject-Back\\FinalProject-Back.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\finalproject-back\\controllers\\librarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F44D7AF2-169B-4F75-813E-1F6CDB32D18E}|FinalProject-Back\\FinalProject-Back.csproj|solutionrelative:finalproject-back\\controllers\\librarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F44D7AF2-169B-4F75-813E-1F6CDB32D18E}|FinalProject-Back\\FinalProject-Back.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\finalproject-back\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F44D7AF2-169B-4F75-813E-1F6CDB32D18E}|FinalProject-Back\\FinalProject-Back.csproj|solutionrelative:finalproject-back\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\service\\services\\libraryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|solutionrelative:service\\services\\libraryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\service\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|solutionrelative:service\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\service\\services\\interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|solutionrelative:service\\services\\interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\service\\services\\interfaces\\ilibraryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|solutionrelative:service\\services\\interfaces\\ilibraryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9CFDC41-21E2-447D-9DD7-2D44CF329B9E}|Repository\\Repository.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\repository\\repositories\\interfaces\\ilibraryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9CFDC41-21E2-447D-9DD7-2D44CF329B9E}|Repository\\Repository.csproj|solutionrelative:repository\\repositories\\interfaces\\ilibraryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D9CFDC41-21E2-447D-9DD7-2D44CF329B9E}|Repository\\Repository.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\repository\\repositories\\interfaces\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D9CFDC41-21E2-447D-9DD7-2D44CF329B9E}|Repository\\Repository.csproj|solutionrelative:repository\\repositories\\interfaces\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\service\\services\\interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C773222C-8BAF-4220-8C5A-327C2D578261}|Service\\Service.csproj|solutionrelative:service\\services\\interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D9CFDC41-21E2-447D-9DD7-2D44CF329B9E}|Repository\\Repository.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\repository\\repositories\\libraryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9CFDC41-21E2-447D-9DD7-2D44CF329B9E}|Repository\\Repository.csproj|solutionrelative:repository\\repositories\\libraryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9CFDC41-21E2-447D-9DD7-2D44CF329B9E}|Repository\\Repository.csproj|c:\\users\\fx706he\\desktop\\finalproject-backend\\finalproject-back\\repository\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9CFDC41-21E2-447D-9DD7-2D44CF329B9E}|Repository\\Repository.csproj|solutionrelative:repository\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,19 +50,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ProductService.cs",
               "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Services\\ProductService.cs",
               "RelativeDocumentMoniker": "Service\\Services\\ProductService.cs",
               "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Services\\ProductService.cs",
               "RelativeToolTip": "Service\\Services\\ProductService.cs",
-              "ViewState": "AQIAAGYAAAAAAAAAAAAkwH8AAAAMAAAA",
+              "ViewState": "AQIAAG4AAAAAAAAAAAAswAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T16:30:34.854Z"
+              "WhenOpened": "2024-08-22T22:29:15.514Z"
             },
             {
               "$type": "Document",
@@ -52,21 +72,33 @@
               "RelativeDocumentMoniker": "Service\\Services\\Interfaces\\IProductService.cs",
               "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Services\\Interfaces\\IProductService.cs",
               "RelativeToolTip": "Service\\Services\\Interfaces\\IProductService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAACyAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T16:30:26.998Z"
+              "WhenOpened": "2024-08-22T22:29:13.698Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Repository\\Repositories\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Repositories\\ProductRepository.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Repository\\Repositories\\ProductRepository.cs",
+              "RelativeToolTip": "Repository\\Repositories\\ProductRepository.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAcwLwAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T22:29:00.33Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "IProductRepository.cs",
               "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Repository\\Repositories\\Interfaces\\IProductRepository.cs",
               "RelativeDocumentMoniker": "Repository\\Repositories\\Interfaces\\IProductRepository.cs",
               "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Repository\\Repositories\\Interfaces\\IProductRepository.cs",
               "RelativeToolTip": "Repository\\Repositories\\Interfaces\\IProductRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAACUAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAACsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T16:29:58.327Z"
+              "WhenOpened": "2024-08-22T22:28:54.52Z"
             },
             {
               "$type": "Document",
@@ -76,23 +108,70 @@
               "RelativeDocumentMoniker": "FinalProject-Back\\Controllers\\ProductController.cs",
               "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\Controllers\\ProductController.cs",
               "RelativeToolTip": "FinalProject-Back\\Controllers\\ProductController.cs",
-              "ViewState": "AQIAAL8AAAAAAAAAAAAmwOMAAAAIAAAA",
+              "ViewState": "AQIAAMUAAAAAAAAAAAAuwOIAAADbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T16:05:38.468Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-22T19:30:00.638Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProductRepository.cs",
-              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Repository\\Repositories\\ProductRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\Repositories\\ProductRepository.cs",
-              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Repository\\Repositories\\ProductRepository.cs",
-              "RelativeToolTip": "Repository\\Repositories\\ProductRepository.cs",
-              "ViewState": "AQIAAMEAAAAAAAAAAAAAwAQBAAAAAAAA",
+              "Title": "LibraryController.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\Controllers\\LibraryController.cs",
+              "RelativeDocumentMoniker": "FinalProject-Back\\Controllers\\LibraryController.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\FinalProject-Back\\Controllers\\LibraryController.cs",
+              "RelativeToolTip": "FinalProject-Back\\Controllers\\LibraryController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAxwCQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T15:47:05.378Z",
+              "WhenOpened": "2024-08-22T22:24:09.821Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ILibraryService.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Services\\Interfaces\\ILibraryService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\Interfaces\\ILibraryService.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Services\\Interfaces\\ILibraryService.cs",
+              "RelativeToolTip": "Service\\Services\\Interfaces\\ILibraryService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAACoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T22:23:49.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ILibraryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Repository\\Repositories\\Interfaces\\ILibraryRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Repositories\\Interfaces\\ILibraryRepository.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Repository\\Repositories\\Interfaces\\ILibraryRepository.cs",
+              "RelativeToolTip": "Repository\\Repositories\\Interfaces\\ILibraryRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAACoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T22:23:40.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LibraryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Repository\\Repositories\\LibraryRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Repositories\\LibraryRepository.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Repository\\Repositories\\LibraryRepository.cs",
+              "RelativeToolTip": "Repository\\Repositories\\LibraryRepository.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAAAB0AAACBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T22:23:20.56Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LibraryService.cs",
+              "DocumentMoniker": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Services\\LibraryService.cs",
+              "RelativeDocumentMoniker": "Service\\Services\\LibraryService.cs",
+              "ToolTip": "C:\\Users\\FX706HE\\Desktop\\FinalProject-BackEnd\\FinalProject-Back\\Service\\Services\\LibraryService.cs",
+              "RelativeToolTip": "Service\\Services\\LibraryService.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAowDEAAABoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T22:23:12.272Z"
             }
           ]
         }
